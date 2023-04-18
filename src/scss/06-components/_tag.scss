@@ -4,6 +4,8 @@
   line-height: 1.333;
   text-transform: uppercase;
   border-radius: 4px;
+  text-decoration: none;
+  padding: 7px 12px;
 }
 .tag-gold {
   color: var(--color-red);
@@ -14,6 +16,8 @@
   background-color: var(--color-light);
 }
 .tag-green {
+  background-color: var(--color-green);
+  color: var(--color-light);
 }
 .tag-red {
 }

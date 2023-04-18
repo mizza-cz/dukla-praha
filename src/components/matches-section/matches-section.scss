@@ -1,0 +1,115 @@
+.matches-section {
+}
+
+.match {
+  padding-top: 28px;
+  border-bottom: 1px solid var(--color-lines);
+  padding-bottom: 24px;
+  position: relative;
+  transition: var(--transition);
+  .col-lg-3:last-child {
+    @include media-breakpoint-down(lg) {
+      order: -1;
+      margin-bottom: 16px;
+    }
+    text-align: right;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+      margin-top: 24px;
+    }
+  }
+  &__row {
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__result {
+    text-align: center;
+    padding: 0 54px;
+    p {
+      font-size: 14px;
+      display: block;
+      line-height: 1.714;
+    }
+    .win {
+      color: var(--color-green);
+    }
+    .lose {
+      color: var(--color-red);
+    }
+    span,
+    a {
+      display: block;
+      font-size: 32px;
+      text-decoration: none;
+      font-weight: 900;
+      @include media-breakpoint-down(sm) {
+        font-size: 28px;
+      }
+    }
+  }
+  &__logo {
+    height: 48px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__col {
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      color: RGB(131, 139, 155);
+      margin-bottom: 5px;
+      display: block;
+    }
+    h4 {
+      color: RGB(0, 17, 15);
+    }
+  }
+}
+.match:hover .match-hover {
+  opacity: 1;
+  visibility: visible;
+}
+.match-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.799363;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+.match__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 15;
+  padding-top: 20px;
+  width: 100%;
+  li {
+    padding: 0 8px;
+  }
+}
