@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+  &__item {
+    padding: 0 4.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+  }
+  &__link {
+    width: 25px;
+    height: 25px;
+    display: block;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}

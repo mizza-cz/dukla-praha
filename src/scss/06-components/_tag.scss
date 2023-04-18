@@ -1,0 +1,19 @@
+.tag {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.333;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.tag-gold {
+  color: var(--color-red);
+  background-color: var(--color-yellow);
+}
+.tag-white {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+.tag-green {
+}
+.tag-red {
+}
