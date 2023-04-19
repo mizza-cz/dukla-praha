@@ -319,6 +319,7 @@
   z-index: 5;
   @include media-breakpoint-down(sm) {
     padding: 0.25rem 0;
+    padding-right: 12px;
   }
   span {
     transition: all 0.3s;

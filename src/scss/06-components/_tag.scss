@@ -1,3 +1,19 @@
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  a:hover {
+    text-decoration: underline;
+  }
+  li:first-child a {
+    border-radius: 8px 0px 0 8px;
+  }
+  li:last-child a {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
 .tag {
   font-weight: 900;
   font-size: 12px;
@@ -6,6 +22,7 @@
   border-radius: 4px;
   text-decoration: none;
   padding: 7px 12px;
+  letter-spacing: 0.5px;
 }
 .tag-gold {
   color: var(--color-red);
@@ -20,4 +37,14 @@
   color: var(--color-light);
 }
 .tag-red {
+  background-color: var(--color-red);
+  color: var(--color-yellow);
+}
+.tag-blue {
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
+}
+.tag-top {
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
 }

@@ -43,18 +43,4 @@
   }
 }
 
-.tags {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 12px;
-  a:hover {
-    text-decoration: underline;
-  }
-  .tag-gold {
-    border-radius: 8px 0px 0 8px;
-  }
-  .tag-white {
-    border-radius: 0 8px 8px 0;
-  }
-}
+

@@ -57,3 +57,38 @@
     line-height: 1.2;
   }
 }
+
+.o-content h4,
+.h4 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  @include media-breakpoint-down(md) {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+}
+
+.o-content h5,
+.h5 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  @include media-breakpoint-down(md) {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}
+.o-content h6,
+.h6 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: 1px;
+  @include media-breakpoint-down(md) {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}

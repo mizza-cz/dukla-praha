@@ -1,0 +1,93 @@
+.shop-slider {
+  padding: 50px 0;
+  .slick-slide > div {
+    height: 100%;
+  }
+  &__inner {
+    display: flex;
+    @media (max-width: 1670px) {
+      padding: 0 64px;
+    }
+  }
+  &__col {
+    padding: 0 8px;
+  }
+  &__item {
+    padding: 32px 16px;
+    flex-direction: column;
+    height: 100%;
+    min-height: 23.6rem;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    transition: var(--transition);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 1);
+    &:hover {
+      border: 1px solid rgba(228, 228, 228, 1);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0),
+        0px 10px 24px rgba(0, 0, 0, 0.052092);
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .h6 {
+      margin-top: auto;
+      color: var(--color-green);
+    }
+  }
+  &__img {
+    margin-bottom: 2.2rem;
+    width: 100%;
+    position: relative;
+    height: 12.2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .tag {
+      position: absolute;
+      top: -6px;
+      left: -25px;
+      font-size: 10px;
+      padding: 5px 8px;
+    }
+  }
+}
+
+.shop-slider__btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 28%;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s;
+  background: transparent;
+  width: 64px;
+  height: 64px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.shop-slider__btnnext {
+  right: -64px;
+  @media (max-width: 1670px) {
+    right: 0;
+  }
+}
+.shop-slider__btnprev {
+  left: -64px;
+  transform: rotate(-180deg);
+  @media (max-width: 1670px) {
+    left: 0;
+  }
+}
