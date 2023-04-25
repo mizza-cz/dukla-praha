@@ -44,6 +44,13 @@
   background-color: var(--color-blue);
   color: var(--color-yellow);
 }
+.tag-gray {
+  background-color: var(--color-gray);
+  &.active,
+  &:hover {
+    background-color: var(--color-yellow);
+  }
+}
 .tag-top {
   background-color: var(--color-yellow);
   color: var(--color-dark);

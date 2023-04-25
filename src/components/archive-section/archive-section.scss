@@ -42,5 +42,9 @@
     }
   }
 }
-
-
+.archive-section {
+  margin-bottom: 60px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 40px;
+  }
+}

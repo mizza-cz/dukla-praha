@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>05.0_player - FK Dukla Praha</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet" />
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a class="header__logo-link" href="">
+							<img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+						</a>
+					</div>
+
+					<div class="header__container">
+						<div class="header__top">
+							<div class="header__title">
+								<a class="header__title-link" href="/">FK Dukla Praha</a>
+								<span class="header-title">Hrdý na svůj klub</span>
+							</div>
+							<ul class="social">
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 0C5.373 0 0 5.374 0 12c0 6.628 5.373 12 12 12 6.628 0 12.001-5.372 12.001-12 0-6.626-5.373-12-12-12zm3.176 11.95h-2.078v7.411h-3.08v-7.41H8.555V9.333h1.465V7.638c0-1.213.576-3.107 3.108-3.107l2.28.008v2.542h-1.655c-.27 0-.653.135-.653.712v1.541h2.348l-.27 2.616z" fill="#FCC824" fill-rule="nonzero" />
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12.001 0c6.628 0 12 5.374 12 12 0 6.628-5.372 12-12 12-6.627 0-12-5.372-12-12 0-6.626 5.373-12 12-12zm2.838 6.335a2.953 2.953 0 00-2.876 3.626 8.384 8.384 0 01-6.087-3.085 2.951 2.951 0 00.914 3.942 2.944 2.944 0 01-1.337-.37v.038A2.955 2.955 0 007.82 13.38a2.969 2.969 0 01-1.333.05 2.956 2.956 0 002.758 2.05 5.923 5.923 0 01-4.372 1.224 8.356 8.356 0 004.527 1.326c5.43 0 8.4-4.499 8.4-8.4a8.75 8.75 0 00-.008-.383 5.98 5.98 0 001.473-1.528 5.875 5.875 0 01-1.696.465A2.958 2.958 0 0018.87 6.55a5.91 5.91 0 01-1.875.717 2.949 2.949 0 00-2.155-.933z" fill="#FCC824" fill-rule="nonzero" />
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<g fill="#FCC824" fill-rule="nonzero">
+												<path d="M6.878 13.01h.87v4.316h.839V13.01h.868v-.735H6.878zM12.034 9.424c.114 0 .205-.03.272-.093.066-.063.1-.15.1-.26V6.836a.263.263 0 00-.102-.217.412.412 0 00-.27-.084.367.367 0 00-.25.084.271.271 0 00-.094.217v2.237c0 .112.03.199.09.26.058.061.144.092.254.092zM13.885 13.555c-.116 0-.23.03-.343.088a1.15 1.15 0 00-.319.26v-1.628h-.753v5.051h.753v-.285a.96.96 0 00.318.253c.113.054.244.081.39.081.22 0 .39-.07.506-.21.117-.142.175-.344.175-.608V14.49c0-.305-.061-.538-.187-.696-.124-.159-.304-.238-.54-.238zm-.04 2.9c0 .12-.022.204-.065.256-.043.053-.11.08-.201.08a.435.435 0 01-.18-.04.608.608 0 01-.176-.132v-2.322a.522.522 0 01.153-.114.347.347 0 01.158-.037c.1 0 .178.032.232.096.053.066.078.16.078.288v1.924zM11.164 16.432c-.07.08-.146.145-.23.198a.426.426 0 01-.208.078c-.07 0-.12-.019-.153-.059-.03-.039-.047-.102-.047-.19v-2.86h-.744v3.117c0 .223.044.387.13.5.09.11.218.165.39.165a.91.91 0 00.433-.118c.15-.08.292-.194.43-.345v.408h.745V13.6h-.745v2.832z" />
+												<path d="M12.002 0c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12s12-5.372 12-12c0-6.627-5.373-12-12-12zm1.938 5.927h.838v3.147c0 .098.02.168.054.21.034.045.092.067.17.067.062 0 .14-.03.235-.086.093-.06.18-.132.257-.223V5.927h.84v4.105h-.84v-.453a1.76 1.76 0 01-.482.381 1.052 1.052 0 01-.486.132c-.194 0-.34-.062-.439-.185-.097-.12-.147-.304-.147-.55v-3.43zm-3.113.938c0-.317.112-.57.337-.76.227-.187.53-.282.911-.282.347 0 .631.1.854.298.22.197.331.455.331.769v2.12c0 .352-.108.627-.324.825-.22.2-.518.3-.899.3-.366 0-.66-.104-.88-.308-.22-.208-.33-.486-.33-.834V6.865zM8.542 4.468l.613 2.223h.06l.583-2.223h.96L9.659 7.724v2.308h-.944V7.827l-1.124-3.36h.951zm10.984 11.711a2.69 2.69 0 01-2.69 2.69H7.493a2.69 2.69 0 01-2.69-2.69v-2.163a2.69 2.69 0 012.69-2.69h9.345a2.69 2.69 0 012.689 2.69v2.163z" />
+												<path d="M16.134 13.508c-.334 0-.604.1-.815.305-.21.203-.317.468-.317.788v1.676c0 .36.097.64.288.845.192.204.454.307.788.307.372 0 .65-.096.836-.288.189-.194.28-.482.28-.864v-.192h-.765v.17c0 .22-.026.361-.074.425-.049.064-.135.096-.26.096-.118 0-.202-.037-.252-.112-.048-.077-.072-.212-.072-.41v-.7h1.424v-.952c0-.353-.09-.623-.274-.812-.183-.188-.446-.282-.787-.282zm.295 1.466h-.658v-.377c0-.156.024-.27.076-.334.052-.07.137-.103.256-.103.112 0 .197.033.247.103.051.064.078.177.078.334v.377z" />
+											</g>
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<g transform="translate(.002)" fill="#FCC824" fill-rule="nonzero">
+												<circle cx="11.9" cy="12.1" r="2.15" />
+												<path d="M14.585 6.83H9.22c-.781 0-1.464.243-1.903.682-.439.44-.683 1.122-.683 1.903v5.365c0 .781.244 1.464.732 1.952.488.439 1.122.683 1.902.683h5.317c.78 0 1.464-.244 1.903-.683.488-.44.732-1.122.732-1.903V9.463c0-.78-.244-1.414-.683-1.902-.488-.488-1.122-.732-1.952-.732zm-2.683 8.585a3.32 3.32 0 01-3.317-3.317 3.32 3.32 0 013.317-3.318c1.805 0 3.366 1.464 3.366 3.318 0 1.853-1.512 3.317-3.366 3.317zm3.464-6a.77.77 0 01-.78-.78.77.77 0 01.78-.781.77.77 0 01.78.78.77.77 0 01-.78.78z" />
+												<path d="M12 0C5.366 0 0 5.366 0 12s5.366 12 12 12 12-5.366 12-12c.049-6.634-5.366-12-12-12zm6.39 14.83c0 1.121-.39 2.097-1.073 2.78-.683.683-1.658 1.024-2.732 1.024H9.268c-1.073 0-2.048-.341-2.731-1.024-.732-.683-1.074-1.659-1.074-2.78V9.462c0-2.243 1.513-3.804 3.805-3.804h5.366c1.122 0 2.049.39 2.732 1.073.683.683 1.024 1.61 1.024 2.731v5.366z" />
+											</g>
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12.002 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.628 0 12-5.373 12-12s-5.372-12-12-12zm6.076 10.893c-1.274 0-2.514-.414-3.469-1.113l-.007 4.757a4.334 4.334 0 11-3.758-4.299v2.337a2.046 2.046 0 101.466 1.962V5.125h2.404a3.364 3.364 0 003.364 3.364v2.404z" fill="#FCC824" fill-rule="nonzero" />
+										</svg> </a>
+								</li>
+
+							</ul>
+							<button class="c-header__opener js-header__opener" type="button">
+								<span></span>
+							</button>
+						</div>
+						<nav class="navbar navbar-expand-xl">
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<form class="header__form">
+									<div class="header__input">
+										<input type="text" />
+									</div>
+									<button>
+										<img src="images/ico/search.svg" loading="lazy" alt="search" />
+									</button>
+								</form>
+								<ul class="navbar-nav">
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="klub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Klub
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="klub">
+											<li>
+												<a class="dropdown-item" href="#">Informace o klubu</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Kontakty</a></li>
+											<li><a class="dropdown-item" href="#">Historie</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link active dropdown-toggle" href="#" id="a-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											A - tým
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="a-tym">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li><a class="dropdown-item" href="#">Realizační tým</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="b-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											B - tým
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="b-tym">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li><a class="dropdown-item" href="#">Realizační tým</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="zeny" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											ženy
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="zeny">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li><a class="dropdown-item" href="#">Realizační tým</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="mladez" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Mládež
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="mladez">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li><a class="dropdown-item" href="#">Realizační tým</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#"> E - Sport </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#"> Partneři </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#"> Vstupenky </a>
+									</li>
+
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="fanousci" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Fanoušci
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="fanousci">
+											<li><a class="dropdown-item" href="#">novinky</a></li>
+											<li><a class="dropdown-item" href="#">fanklub</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="mob-social">
+									<ul class="social">
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 0C5.373 0 0 5.374 0 12c0 6.628 5.373 12 12 12 6.628 0 12.001-5.372 12.001-12 0-6.626-5.373-12-12-12zm3.176 11.95h-2.078v7.411h-3.08v-7.41H8.555V9.333h1.465V7.638c0-1.213.576-3.107 3.108-3.107l2.28.008v2.542h-1.655c-.27 0-.653.135-.653.712v1.541h2.348l-.27 2.616z" fill="#FCC824" fill-rule="nonzero" />
+												</svg> </a>
+										</li>
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.001 0c6.628 0 12 5.374 12 12 0 6.628-5.372 12-12 12-6.627 0-12-5.372-12-12 0-6.626 5.373-12 12-12zm2.838 6.335a2.953 2.953 0 00-2.876 3.626 8.384 8.384 0 01-6.087-3.085 2.951 2.951 0 00.914 3.942 2.944 2.944 0 01-1.337-.37v.038A2.955 2.955 0 007.82 13.38a2.969 2.969 0 01-1.333.05 2.956 2.956 0 002.758 2.05 5.923 5.923 0 01-4.372 1.224 8.356 8.356 0 004.527 1.326c5.43 0 8.4-4.499 8.4-8.4a8.75 8.75 0 00-.008-.383 5.98 5.98 0 001.473-1.528 5.875 5.875 0 01-1.696.465A2.958 2.958 0 0018.87 6.55a5.91 5.91 0 01-1.875.717 2.949 2.949 0 00-2.155-.933z" fill="#FCC824" fill-rule="nonzero" />
+												</svg> </a>
+										</li>
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+													<g fill="#FCC824" fill-rule="nonzero">
+														<path d="M6.878 13.01h.87v4.316h.839V13.01h.868v-.735H6.878zM12.034 9.424c.114 0 .205-.03.272-.093.066-.063.1-.15.1-.26V6.836a.263.263 0 00-.102-.217.412.412 0 00-.27-.084.367.367 0 00-.25.084.271.271 0 00-.094.217v2.237c0 .112.03.199.09.26.058.061.144.092.254.092zM13.885 13.555c-.116 0-.23.03-.343.088a1.15 1.15 0 00-.319.26v-1.628h-.753v5.051h.753v-.285a.96.96 0 00.318.253c.113.054.244.081.39.081.22 0 .39-.07.506-.21.117-.142.175-.344.175-.608V14.49c0-.305-.061-.538-.187-.696-.124-.159-.304-.238-.54-.238zm-.04 2.9c0 .12-.022.204-.065.256-.043.053-.11.08-.201.08a.435.435 0 01-.18-.04.608.608 0 01-.176-.132v-2.322a.522.522 0 01.153-.114.347.347 0 01.158-.037c.1 0 .178.032.232.096.053.066.078.16.078.288v1.924zM11.164 16.432c-.07.08-.146.145-.23.198a.426.426 0 01-.208.078c-.07 0-.12-.019-.153-.059-.03-.039-.047-.102-.047-.19v-2.86h-.744v3.117c0 .223.044.387.13.5.09.11.218.165.39.165a.91.91 0 00.433-.118c.15-.08.292-.194.43-.345v.408h.745V13.6h-.745v2.832z" />
+														<path d="M12.002 0c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12s12-5.372 12-12c0-6.627-5.373-12-12-12zm1.938 5.927h.838v3.147c0 .098.02.168.054.21.034.045.092.067.17.067.062 0 .14-.03.235-.086.093-.06.18-.132.257-.223V5.927h.84v4.105h-.84v-.453a1.76 1.76 0 01-.482.381 1.052 1.052 0 01-.486.132c-.194 0-.34-.062-.439-.185-.097-.12-.147-.304-.147-.55v-3.43zm-3.113.938c0-.317.112-.57.337-.76.227-.187.53-.282.911-.282.347 0 .631.1.854.298.22.197.331.455.331.769v2.12c0 .352-.108.627-.324.825-.22.2-.518.3-.899.3-.366 0-.66-.104-.88-.308-.22-.208-.33-.486-.33-.834V6.865zM8.542 4.468l.613 2.223h.06l.583-2.223h.96L9.659 7.724v2.308h-.944V7.827l-1.124-3.36h.951zm10.984 11.711a2.69 2.69 0 01-2.69 2.69H7.493a2.69 2.69 0 01-2.69-2.69v-2.163a2.69 2.69 0 012.69-2.69h9.345a2.69 2.69 0 012.689 2.69v2.163z" />
+														<path d="M16.134 13.508c-.334 0-.604.1-.815.305-.21.203-.317.468-.317.788v1.676c0 .36.097.64.288.845.192.204.454.307.788.307.372 0 .65-.096.836-.288.189-.194.28-.482.28-.864v-.192h-.765v.17c0 .22-.026.361-.074.425-.049.064-.135.096-.26.096-.118 0-.202-.037-.252-.112-.048-.077-.072-.212-.072-.41v-.7h1.424v-.952c0-.353-.09-.623-.274-.812-.183-.188-.446-.282-.787-.282zm.295 1.466h-.658v-.377c0-.156.024-.27.076-.334.052-.07.137-.103.256-.103.112 0 .197.033.247.103.051.064.078.177.078.334v.377z" />
+													</g>
+												</svg> </a>
+										</li>
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+													<g transform="translate(.002)" fill="#FCC824" fill-rule="nonzero">
+														<circle cx="11.9" cy="12.1" r="2.15" />
+														<path d="M14.585 6.83H9.22c-.781 0-1.464.243-1.903.682-.439.44-.683 1.122-.683 1.903v5.365c0 .781.244 1.464.732 1.952.488.439 1.122.683 1.902.683h5.317c.78 0 1.464-.244 1.903-.683.488-.44.732-1.122.732-1.903V9.463c0-.78-.244-1.414-.683-1.902-.488-.488-1.122-.732-1.952-.732zm-2.683 8.585a3.32 3.32 0 01-3.317-3.317 3.32 3.32 0 013.317-3.318c1.805 0 3.366 1.464 3.366 3.318 0 1.853-1.512 3.317-3.366 3.317zm3.464-6a.77.77 0 01-.78-.78.77.77 0 01.78-.781.77.77 0 01.78.78.77.77 0 01-.78.78z" />
+														<path d="M12 0C5.366 0 0 5.366 0 12s5.366 12 12 12 12-5.366 12-12c.049-6.634-5.366-12-12-12zm6.39 14.83c0 1.121-.39 2.097-1.073 2.78-.683.683-1.658 1.024-2.732 1.024H9.268c-1.073 0-2.048-.341-2.731-1.024-.732-.683-1.074-1.659-1.074-2.78V9.462c0-2.243 1.513-3.804 3.805-3.804h5.366c1.122 0 2.049.39 2.732 1.073.683.683 1.024 1.61 1.024 2.731v5.366z" />
+													</g>
+												</svg> </a>
+										</li>
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.002 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.628 0 12-5.373 12-12s-5.372-12-12-12zm6.076 10.893c-1.274 0-2.514-.414-3.469-1.113l-.007 4.757a4.334 4.334 0 11-3.758-4.299v2.337a2.046 2.046 0 101.466 1.962V5.125h2.404a3.364 3.364 0 003.364 3.364v2.404z" fill="#FCC824" fill-rule="nonzero" />
+												</svg> </a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="header__search">
+								<a href="#" class="header__search-img">
+									<img src="images/ico/search.svg" loading="lazy" alt="search" />
+								</a>
+							</div>
+							<!-- <button class="c-header__opener js-header__opener" type="button">
+          Menu
+          <span></span>
+        </button> -->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="player-section">
+				<div class="container">
+					<div class="player-section__top">
+						<div class="player-section__img">
+							<img src="images/content/player-section.png" loading="lazy" alt="player" />
+						</div>
+						<div class="player-section__info">
+							<div class="player-section__number">10</div>
+							<h1 class="h1 mb-4"><span>Jan</span> Čtvrtečka</h1>
+							<h5 class="h5 text-yellow mb-5">Útočník</h5>
+							<div class="player-section__info-links">
+								<ul class="social social-player">
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0C5.373 0 0 5.374 0 12c0 6.628 5.373 12 12 12 6.628 0 12.001-5.372 12.001-12 0-6.626-5.373-12-12-12zm3.176 11.95h-2.078v7.411h-3.08v-7.41H8.555V9.333h1.465V7.638c0-1.213.576-3.107 3.108-3.107l2.28.008v2.542h-1.655c-.27 0-.653.135-.653.712v1.541h2.348l-.27 2.616z" fill="#FCC824" fill-rule="nonzero" />
+											</svg> </a>
+									</li>
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.001 0c6.628 0 12 5.374 12 12 0 6.628-5.372 12-12 12-6.627 0-12-5.372-12-12 0-6.626 5.373-12 12-12zm2.838 6.335a2.953 2.953 0 00-2.876 3.626 8.384 8.384 0 01-6.087-3.085 2.951 2.951 0 00.914 3.942 2.944 2.944 0 01-1.337-.37v.038A2.955 2.955 0 007.82 13.38a2.969 2.969 0 01-1.333.05 2.956 2.956 0 002.758 2.05 5.923 5.923 0 01-4.372 1.224 8.356 8.356 0 004.527 1.326c5.43 0 8.4-4.499 8.4-8.4a8.75 8.75 0 00-.008-.383 5.98 5.98 0 001.473-1.528 5.875 5.875 0 01-1.696.465A2.958 2.958 0 0018.87 6.55a5.91 5.91 0 01-1.875.717 2.949 2.949 0 00-2.155-.933z" fill="#FCC824" fill-rule="nonzero" />
+											</svg> </a>
+									</li>
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+												<g transform="translate(.002)" fill="#FCC824" fill-rule="nonzero">
+													<circle cx="11.9" cy="12.1" r="2.15" />
+													<path d="M14.585 6.83H9.22c-.781 0-1.464.243-1.903.682-.439.44-.683 1.122-.683 1.903v5.365c0 .781.244 1.464.732 1.952.488.439 1.122.683 1.902.683h5.317c.78 0 1.464-.244 1.903-.683.488-.44.732-1.122.732-1.903V9.463c0-.78-.244-1.414-.683-1.902-.488-.488-1.122-.732-1.952-.732zm-2.683 8.585a3.32 3.32 0 01-3.317-3.317 3.32 3.32 0 013.317-3.318c1.805 0 3.366 1.464 3.366 3.318 0 1.853-1.512 3.317-3.366 3.317zm3.464-6a.77.77 0 01-.78-.78.77.77 0 01.78-.781.77.77 0 01.78.78.77.77 0 01-.78.78z" />
+													<path d="M12 0C5.366 0 0 5.366 0 12s5.366 12 12 12 12-5.366 12-12c.049-6.634-5.366-12-12-12zm6.39 14.83c0 1.121-.39 2.097-1.073 2.78-.683.683-1.658 1.024-2.732 1.024H9.268c-1.073 0-2.048-.341-2.731-1.024-.732-.683-1.074-1.659-1.074-2.78V9.462c0-2.243 1.513-3.804 3.805-3.804h5.366c1.122 0 2.049.39 2.732 1.073.683.683 1.024 1.61 1.024 2.731v5.366z" />
+												</g>
+											</svg> </a>
+									</li>
+								</ul>
+								<a href="#" class="btn btn-white">Transfermarkt</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="player-detail">
+				<div class="container">
+					<div class="row g-5">
+						<div class="col-lg-5">
+							<div class="player-detail__info">
+								<h2 class="h2">Personální informace</h2>
+								<div class="tabs-section">
+									<ul class="nav nav-tabs mb-8">
+										<li class="">
+											<a data-toggle="tab" class="active tag tag-gray" href="#udaje">
+												Základní údaje
+											</a>
+										</li>
+										<li>
+											<a data-toggle="tab" class="tag tag-gray" href="#zivotopis">
+												Životopis
+											</a>
+										</li>
+										<li>
+											<a data-toggle="tab" class="tag tag-gray" href="#uspechy">
+												Úspěchy
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane in active" id="udaje">
+											<ul class="player-detail__data">
+												<li>
+													<strong> Datum narození </strong>
+													14.4.1978
+												</li>
+												<li>
+													<strong> Váha </strong>
+													78 kg
+												</li>
+												<li>
+													<strong>Výška</strong>
+													177 cm
+												</li>
+												<li>
+													<strong>Národnost</strong>
+													Česko
+												</li>
+												<li>
+													<strong> Atribut </strong>
+													Hodnota
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade" id="zivotopis">
+											<div class="player-detail__content">
+												<div class="o-content">
+													<p>
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+														Ex, eum nisi. Dolore est, consequatur autem voluptates
+														nobis asperiores perspiciatis! Cumque debitis ullam nihil
+														deleniti. Blanditiis quasi reiciendis dolores cupiditate
+														in. Iusto nulla molestias ullam, illo, eveniet, nesciunt
+														quod voluptas expedita ducimus voluptates earum laudantium
+														omnis similique officiis numquam necessitatibus neque
+														delectus totam voluptatem eos non. Dolorem obcaecati ex
+														ullam veritatis. i non accusamus, laudantium tempora?
+													</p>
+													<p>
+														Facere et magnam quia cum consequatur ratione dicta nam
+														nemo minima. Natus incidunt unde voluptatum consectetur
+														earum nisi aperiam, voluptatem iure minus saepe cupiditate
+														modi molestias similique architecto facere doloremque?
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tabs-section__content tab-pane fade" id="uspechy">
+											<div class="player-detail__content">
+												<div class="o-content">
+													<ul>
+														<li>Schweizerischer Meister 2011, 2012, 2013, 2014</li>
+														<li>Schweizerischer Cupsieger 2007, 2012</li>
+														<li>Liechtensteiner Cupsieger 2008</li>
+														<li>
+															Schweizerischer Nationalspieler des Jahres 2016, 2018,
+															2021
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="player-detail__statistics">
+								<h2 class="h2">Statistiky</h2>
+								<div class="tabs-section">
+									<ul class="nav nav-tabs mb-8">
+										<li>
+											<a data-toggle="tab" class="tag tag-gray" href="#one">
+												2019/2020
+											</a>
+										</li>
+										<li>
+											<a data-toggle="tab" class="tab tag tag-gray" href="#two">
+												2020/2021
+											</a>
+										</li>
+										<li>
+											<a data-toggle="tab" class="tab tag tag-gray" href="#three">
+												2021/2022
+											</a>
+										</li>
+										<li>
+											<a data-toggle="tab" class="tab tag tag-gray active" href="#four">
+												2022/2023
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tabs-section__content tab-pane fade" id="one">
+											<ul class="player-progress">
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="37" height="26" viewBox="0 0 37 26" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<rect width="35" height="24" rx="1.6" />
+																<path d="M0 4.8h4.773c.878 0 1.59.716 1.59 1.6v11.2c0 .884-.712 1.6-1.59 1.6H0M35 19.2h-4.773c-.878 0-1.59-.716-1.59-1.6V6.4c0-.884.712-1.6 1.59-1.6H35M17.5 0v24" />
+																<ellipse cx="17.5" cy="12" rx="4.77" ry="4.8" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Zápasy</span>
+													<div class="player-progress__number">238</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="15" cy="22.64" rx="15" ry="15.36" />
+																<path d="M10.26.81h9.48M25.61 11.78l2.81-2.89M12.632 7.466V.809h4.736v6.658M27.63 8.09l1.58 1.61M15 22.64l-7.11-7.28" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Minuty</span>
+													<div class="player-progress__number">444</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M19.5 1C9.283 1 1 9.283 1 19.5S9.283 38 19.5 38 38 29.717 38 19.5 29.717 1 19.5 1z" />
+																<path d="M14.44 27.317l-3.144-9.702 8.225-5.994 8.225 5.994-3.14 9.702zM26.594 2.41l-7.073 3.02-7.07-3.02M5.528 7.374l.686 7.757-5.15 5.926M3.678 29.072l7.62 1.755 4 6.694M23.758 37.508l3.988-6.684 7.585-1.747M37.939 21.01l-5.113-5.884.683-7.709M19.52 5.43v6.19M27.75 17.61l5.08-2.48M24.61 27.32l3.14 3.5M14.44 27.32l-3.14 3.51M6.21 15.13l5.09 2.48" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Góly</span>
+													<div class="player-progress__number">33</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="35" viewBox="0 0 39 35" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M24.356 20.531s-8.334-.34-11.981.718a3.845 3.845 0 00-2.586 2.516v.022a2.144 2.144 0 001.399 2.694l18.71 5.922 2.932-9.194-1.013.522c-2.026 1.047-5.1.073-6.919-2.19a9.258 9.258 0 01-.542-1.01h0zM26.32 32.96l.49-1.53M21.71 31.5l.48-1.53M12.48 28.58l.49-1.53M17.09 30.04l.49-1.53" />
+																<path d="M24.356 20.531l2.112-13.184a.804.804 0 011.03-.644c3.165.957 5.754 1.505 8.93 2.47a.806.806 0 01.534 1.013l-4.15 13.024M25.81 11.26l9.87 2.94" />
+																<ellipse cx="8.87" cy="8.84" rx="8.87" ry="8.84" />
+																<path d="M8.872 2.412L4.839 5.628l1.613 4.823h4.839l1.613-4.823zM6.45 10.45l-2.73 5.44M11.29 10.45l2.79 5.56M4.84 5.63H.6M8.87 2.41V0M12.9 5.63h4.24M18.21 20.56L20 29.28M21.96 20.48l2.03 9.87M14.56 20.82l1.35 7.16" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Asistence</span>
+													<div class="player-progress__number">91</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="39" viewBox="0 0 32 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M12.778 37.5c-3.959-1.198-6.604-4.877-6.445-8.961v-4.772c0-1.546.806-3.18 2.417-3.18h.806c1.61 0 2.416 1.59 2.416 3.18v3.181s5.64 1.591 5.64 4.772M30.5 18.2v11.93a7.88 7.88 0 01-2.417 5.673M20.833 22.177V11.838c0-1.317 1.082-2.385 2.417-2.385 1.335 0 2.417 1.068 2.417 2.385v6.363" />
+																<path d="M25.667 22.177V18.2c0-1.318 1.082-2.386 2.416-2.386 1.335 0 2.417 1.068 2.417 2.386v2.385M6.459 30.13H3.917c-1.335 0-2.417-1.069-2.417-2.386V3.886C1.5 2.568 2.582 1.5 3.917 1.5h14.5c1.334 0 2.416 1.068 2.416 2.386v23.858c0 1.317-1.082 2.385-2.416 2.385h-1.309" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Karty</span>
+													<div class="player-progress__number">
+														<span class="text-yellow">1</span>
+														<span>1</span>
+													</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="38" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="23.53" cy="4.04" rx="4.02" ry="4.04" />
+																<ellipse cx="33.78" cy="32.76" rx="3.22" ry="3.24" />
+																<path d="M29.576 16.888h-.92c-3.186 0-3.61-1.043-5.486-3.634a11.482 11.482 0 00-3.975-3.441l-.052-.036a2.803 2.803 0 00-.242-.118C13.619 7.07 7.246 8.912 4.136 13.926l-.35.565a2.437 2.437 0 00.77 3.346c1.131.71 2.62.363 3.327-.775l.349-.565a6.618 6.618 0 015.648-3.149c.17 0 .34 0 .51.021l-4.665 8.44a2.41 2.41 0 01-2.111 1.247H2.413A2.42 2.42 0 000 25.483a2.42 2.42 0 002.413 2.427h5.203a7.232 7.232 0 005.715-2.812l3.56 3.178c.514.462.806 1.122.805 1.815v3.482A2.42 2.42 0 0020.109 36a2.42 2.42 0 002.413-2.427v-3.482a7.3 7.3 0 00-2.431-5.443l-4.292-3.838 2.947-5.339c.186.2.36.413.521.634 2.782 3.845 4.666 5.633 9.389 5.633h.92a2.42 2.42 0 002.413-2.427 2.42 2.42 0 00-2.413-2.427v.004z" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Kilometry</span>
+													<div class="player-progress__number">2341</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tabs-section__content tab-pane fade" id="two">
+											<ul class="player-progress">
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="37" height="26" viewBox="0 0 37 26" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<rect width="35" height="24" rx="1.6" />
+																<path d="M0 4.8h4.773c.878 0 1.59.716 1.59 1.6v11.2c0 .884-.712 1.6-1.59 1.6H0M35 19.2h-4.773c-.878 0-1.59-.716-1.59-1.6V6.4c0-.884.712-1.6 1.59-1.6H35M17.5 0v24" />
+																<ellipse cx="17.5" cy="12" rx="4.77" ry="4.8" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Zápasy</span>
+													<div class="player-progress__number">28</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="15" cy="22.64" rx="15" ry="15.36" />
+																<path d="M10.26.81h9.48M25.61 11.78l2.81-2.89M12.632 7.466V.809h4.736v6.658M27.63 8.09l1.58 1.61M15 22.64l-7.11-7.28" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Minuty</span>
+													<div class="player-progress__number">648</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M19.5 1C9.283 1 1 9.283 1 19.5S9.283 38 19.5 38 38 29.717 38 19.5 29.717 1 19.5 1z" />
+																<path d="M14.44 27.317l-3.144-9.702 8.225-5.994 8.225 5.994-3.14 9.702zM26.594 2.41l-7.073 3.02-7.07-3.02M5.528 7.374l.686 7.757-5.15 5.926M3.678 29.072l7.62 1.755 4 6.694M23.758 37.508l3.988-6.684 7.585-1.747M37.939 21.01l-5.113-5.884.683-7.709M19.52 5.43v6.19M27.75 17.61l5.08-2.48M24.61 27.32l3.14 3.5M14.44 27.32l-3.14 3.51M6.21 15.13l5.09 2.48" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Góly</span>
+													<div class="player-progress__number">19</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="35" viewBox="0 0 39 35" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M24.356 20.531s-8.334-.34-11.981.718a3.845 3.845 0 00-2.586 2.516v.022a2.144 2.144 0 001.399 2.694l18.71 5.922 2.932-9.194-1.013.522c-2.026 1.047-5.1.073-6.919-2.19a9.258 9.258 0 01-.542-1.01h0zM26.32 32.96l.49-1.53M21.71 31.5l.48-1.53M12.48 28.58l.49-1.53M17.09 30.04l.49-1.53" />
+																<path d="M24.356 20.531l2.112-13.184a.804.804 0 011.03-.644c3.165.957 5.754 1.505 8.93 2.47a.806.806 0 01.534 1.013l-4.15 13.024M25.81 11.26l9.87 2.94" />
+																<ellipse cx="8.87" cy="8.84" rx="8.87" ry="8.84" />
+																<path d="M8.872 2.412L4.839 5.628l1.613 4.823h4.839l1.613-4.823zM6.45 10.45l-2.73 5.44M11.29 10.45l2.79 5.56M4.84 5.63H.6M8.87 2.41V0M12.9 5.63h4.24M18.21 20.56L20 29.28M21.96 20.48l2.03 9.87M14.56 20.82l1.35 7.16" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Asistence</span>
+													<div class="player-progress__number">12</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="39" viewBox="0 0 32 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M12.778 37.5c-3.959-1.198-6.604-4.877-6.445-8.961v-4.772c0-1.546.806-3.18 2.417-3.18h.806c1.61 0 2.416 1.59 2.416 3.18v3.181s5.64 1.591 5.64 4.772M30.5 18.2v11.93a7.88 7.88 0 01-2.417 5.673M20.833 22.177V11.838c0-1.317 1.082-2.385 2.417-2.385 1.335 0 2.417 1.068 2.417 2.385v6.363" />
+																<path d="M25.667 22.177V18.2c0-1.318 1.082-2.386 2.416-2.386 1.335 0 2.417 1.068 2.417 2.386v2.385M6.459 30.13H3.917c-1.335 0-2.417-1.069-2.417-2.386V3.886C1.5 2.568 2.582 1.5 3.917 1.5h14.5c1.334 0 2.416 1.068 2.416 2.386v23.858c0 1.317-1.082 2.385-2.416 2.385h-1.309" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Karty</span>
+													<div class="player-progress__number">
+														<span class="text-yellow">5</span>
+														<span class="text-red">9</span>
+													</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="38" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="23.53" cy="4.04" rx="4.02" ry="4.04" />
+																<ellipse cx="33.78" cy="32.76" rx="3.22" ry="3.24" />
+																<path d="M29.576 16.888h-.92c-3.186 0-3.61-1.043-5.486-3.634a11.482 11.482 0 00-3.975-3.441l-.052-.036a2.803 2.803 0 00-.242-.118C13.619 7.07 7.246 8.912 4.136 13.926l-.35.565a2.437 2.437 0 00.77 3.346c1.131.71 2.62.363 3.327-.775l.349-.565a6.618 6.618 0 015.648-3.149c.17 0 .34 0 .51.021l-4.665 8.44a2.41 2.41 0 01-2.111 1.247H2.413A2.42 2.42 0 000 25.483a2.42 2.42 0 002.413 2.427h5.203a7.232 7.232 0 005.715-2.812l3.56 3.178c.514.462.806 1.122.805 1.815v3.482A2.42 2.42 0 0020.109 36a2.42 2.42 0 002.413-2.427v-3.482a7.3 7.3 0 00-2.431-5.443l-4.292-3.838 2.947-5.339c.186.2.36.413.521.634 2.782 3.845 4.666 5.633 9.389 5.633h.92a2.42 2.42 0 002.413-2.427 2.42 2.42 0 00-2.413-2.427v.004z" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Kilometry</span>
+													<div class="player-progress__number">5498</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tabs-section__content tab-pane fade" id="three">
+											<ul class="player-progress">
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="37" height="26" viewBox="0 0 37 26" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<rect width="35" height="24" rx="1.6" />
+																<path d="M0 4.8h4.773c.878 0 1.59.716 1.59 1.6v11.2c0 .884-.712 1.6-1.59 1.6H0M35 19.2h-4.773c-.878 0-1.59-.716-1.59-1.6V6.4c0-.884.712-1.6 1.59-1.6H35M17.5 0v24" />
+																<ellipse cx="17.5" cy="12" rx="4.77" ry="4.8" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Zápasy</span>
+													<div class="player-progress__number">28</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="15" cy="22.64" rx="15" ry="15.36" />
+																<path d="M10.26.81h9.48M25.61 11.78l2.81-2.89M12.632 7.466V.809h4.736v6.658M27.63 8.09l1.58 1.61M15 22.64l-7.11-7.28" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Minuty</span>
+													<div class="player-progress__number">111</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M19.5 1C9.283 1 1 9.283 1 19.5S9.283 38 19.5 38 38 29.717 38 19.5 29.717 1 19.5 1z" />
+																<path d="M14.44 27.317l-3.144-9.702 8.225-5.994 8.225 5.994-3.14 9.702zM26.594 2.41l-7.073 3.02-7.07-3.02M5.528 7.374l.686 7.757-5.15 5.926M3.678 29.072l7.62 1.755 4 6.694M23.758 37.508l3.988-6.684 7.585-1.747M37.939 21.01l-5.113-5.884.683-7.709M19.52 5.43v6.19M27.75 17.61l5.08-2.48M24.61 27.32l3.14 3.5M14.44 27.32l-3.14 3.51M6.21 15.13l5.09 2.48" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Góly</span>
+													<div class="player-progress__number">22</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="35" viewBox="0 0 39 35" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M24.356 20.531s-8.334-.34-11.981.718a3.845 3.845 0 00-2.586 2.516v.022a2.144 2.144 0 001.399 2.694l18.71 5.922 2.932-9.194-1.013.522c-2.026 1.047-5.1.073-6.919-2.19a9.258 9.258 0 01-.542-1.01h0zM26.32 32.96l.49-1.53M21.71 31.5l.48-1.53M12.48 28.58l.49-1.53M17.09 30.04l.49-1.53" />
+																<path d="M24.356 20.531l2.112-13.184a.804.804 0 011.03-.644c3.165.957 5.754 1.505 8.93 2.47a.806.806 0 01.534 1.013l-4.15 13.024M25.81 11.26l9.87 2.94" />
+																<ellipse cx="8.87" cy="8.84" rx="8.87" ry="8.84" />
+																<path d="M8.872 2.412L4.839 5.628l1.613 4.823h4.839l1.613-4.823zM6.45 10.45l-2.73 5.44M11.29 10.45l2.79 5.56M4.84 5.63H.6M8.87 2.41V0M12.9 5.63h4.24M18.21 20.56L20 29.28M21.96 20.48l2.03 9.87M14.56 20.82l1.35 7.16" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Asistence</span>
+													<div class="player-progress__number">31</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="39" viewBox="0 0 32 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M12.778 37.5c-3.959-1.198-6.604-4.877-6.445-8.961v-4.772c0-1.546.806-3.18 2.417-3.18h.806c1.61 0 2.416 1.59 2.416 3.18v3.181s5.64 1.591 5.64 4.772M30.5 18.2v11.93a7.88 7.88 0 01-2.417 5.673M20.833 22.177V11.838c0-1.317 1.082-2.385 2.417-2.385 1.335 0 2.417 1.068 2.417 2.385v6.363" />
+																<path d="M25.667 22.177V18.2c0-1.318 1.082-2.386 2.416-2.386 1.335 0 2.417 1.068 2.417 2.386v2.385M6.459 30.13H3.917c-1.335 0-2.417-1.069-2.417-2.386V3.886C1.5 2.568 2.582 1.5 3.917 1.5h14.5c1.334 0 2.416 1.068 2.416 2.386v23.858c0 1.317-1.082 2.385-2.416 2.385h-1.309" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Karty</span>
+													<div class="player-progress__number">
+														<span class="text-yellow">5</span>
+														<span class="text-red">9</span>
+													</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="38" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="23.53" cy="4.04" rx="4.02" ry="4.04" />
+																<ellipse cx="33.78" cy="32.76" rx="3.22" ry="3.24" />
+																<path d="M29.576 16.888h-.92c-3.186 0-3.61-1.043-5.486-3.634a11.482 11.482 0 00-3.975-3.441l-.052-.036a2.803 2.803 0 00-.242-.118C13.619 7.07 7.246 8.912 4.136 13.926l-.35.565a2.437 2.437 0 00.77 3.346c1.131.71 2.62.363 3.327-.775l.349-.565a6.618 6.618 0 015.648-3.149c.17 0 .34 0 .51.021l-4.665 8.44a2.41 2.41 0 01-2.111 1.247H2.413A2.42 2.42 0 000 25.483a2.42 2.42 0 002.413 2.427h5.203a7.232 7.232 0 005.715-2.812l3.56 3.178c.514.462.806 1.122.805 1.815v3.482A2.42 2.42 0 0020.109 36a2.42 2.42 0 002.413-2.427v-3.482a7.3 7.3 0 00-2.431-5.443l-4.292-3.838 2.947-5.339c.186.2.36.413.521.634 2.782 3.845 4.666 5.633 9.389 5.633h.92a2.42 2.42 0 002.413-2.427 2.42 2.42 0 00-2.413-2.427v.004z" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Kilometry</span>
+													<div class="player-progress__number">5498</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tabs-section__content tab-pane in active" id="four">
+											<ul class="player-progress">
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="37" height="26" viewBox="0 0 37 26" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<rect width="35" height="24" rx="1.6" />
+																<path d="M0 4.8h4.773c.878 0 1.59.716 1.59 1.6v11.2c0 .884-.712 1.6-1.59 1.6H0M35 19.2h-4.773c-.878 0-1.59-.716-1.59-1.6V6.4c0-.884.712-1.6 1.59-1.6H35M17.5 0v24" />
+																<ellipse cx="17.5" cy="12" rx="4.77" ry="4.8" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Zápasy</span>
+													<div class="player-progress__number">28</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="15" cy="22.64" rx="15" ry="15.36" />
+																<path d="M10.26.81h9.48M25.61 11.78l2.81-2.89M12.632 7.466V.809h4.736v6.658M27.63 8.09l1.58 1.61M15 22.64l-7.11-7.28" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Minuty</span>
+													<div class="player-progress__number">648</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M19.5 1C9.283 1 1 9.283 1 19.5S9.283 38 19.5 38 38 29.717 38 19.5 29.717 1 19.5 1z" />
+																<path d="M14.44 27.317l-3.144-9.702 8.225-5.994 8.225 5.994-3.14 9.702zM26.594 2.41l-7.073 3.02-7.07-3.02M5.528 7.374l.686 7.757-5.15 5.926M3.678 29.072l7.62 1.755 4 6.694M23.758 37.508l3.988-6.684 7.585-1.747M37.939 21.01l-5.113-5.884.683-7.709M19.52 5.43v6.19M27.75 17.61l5.08-2.48M24.61 27.32l3.14 3.5M14.44 27.32l-3.14 3.51M6.21 15.13l5.09 2.48" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Góly</span>
+													<div class="player-progress__number">19</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="35" viewBox="0 0 39 35" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M24.356 20.531s-8.334-.34-11.981.718a3.845 3.845 0 00-2.586 2.516v.022a2.144 2.144 0 001.399 2.694l18.71 5.922 2.932-9.194-1.013.522c-2.026 1.047-5.1.073-6.919-2.19a9.258 9.258 0 01-.542-1.01h0zM26.32 32.96l.49-1.53M21.71 31.5l.48-1.53M12.48 28.58l.49-1.53M17.09 30.04l.49-1.53" />
+																<path d="M24.356 20.531l2.112-13.184a.804.804 0 011.03-.644c3.165.957 5.754 1.505 8.93 2.47a.806.806 0 01.534 1.013l-4.15 13.024M25.81 11.26l9.87 2.94" />
+																<ellipse cx="8.87" cy="8.84" rx="8.87" ry="8.84" />
+																<path d="M8.872 2.412L4.839 5.628l1.613 4.823h4.839l1.613-4.823zM6.45 10.45l-2.73 5.44M11.29 10.45l2.79 5.56M4.84 5.63H.6M8.87 2.41V0M12.9 5.63h4.24M18.21 20.56L20 29.28M21.96 20.48l2.03 9.87M14.56 20.82l1.35 7.16" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Asistence</span>
+													<div class="player-progress__number">12</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="32" height="39" viewBox="0 0 32 39" xmlns="http://www.w3.org/2000/svg">
+															<g stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M12.778 37.5c-3.959-1.198-6.604-4.877-6.445-8.961v-4.772c0-1.546.806-3.18 2.417-3.18h.806c1.61 0 2.416 1.59 2.416 3.18v3.181s5.64 1.591 5.64 4.772M30.5 18.2v11.93a7.88 7.88 0 01-2.417 5.673M20.833 22.177V11.838c0-1.317 1.082-2.385 2.417-2.385 1.335 0 2.417 1.068 2.417 2.385v6.363" />
+																<path d="M25.667 22.177V18.2c0-1.318 1.082-2.386 2.416-2.386 1.335 0 2.417 1.068 2.417 2.386v2.385M6.459 30.13H3.917c-1.335 0-2.417-1.069-2.417-2.386V3.886C1.5 2.568 2.582 1.5 3.917 1.5h14.5c1.334 0 2.416 1.068 2.416 2.386v23.858c0 1.317-1.082 2.385-2.416 2.385h-1.309" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Karty</span>
+													<div class="player-progress__number">
+														<span class="text-yellow">5</span>
+														<span>1</span>
+													</div>
+												</li>
+												<li class="player-progress__item">
+													<div class="player-progress__icon">
+														<svg width="39" height="38" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg">
+															<g transform="translate(1 1)" stroke="#671219" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+																<ellipse cx="23.53" cy="4.04" rx="4.02" ry="4.04" />
+																<ellipse cx="33.78" cy="32.76" rx="3.22" ry="3.24" />
+																<path d="M29.576 16.888h-.92c-3.186 0-3.61-1.043-5.486-3.634a11.482 11.482 0 00-3.975-3.441l-.052-.036a2.803 2.803 0 00-.242-.118C13.619 7.07 7.246 8.912 4.136 13.926l-.35.565a2.437 2.437 0 00.77 3.346c1.131.71 2.62.363 3.327-.775l.349-.565a6.618 6.618 0 015.648-3.149c.17 0 .34 0 .51.021l-4.665 8.44a2.41 2.41 0 01-2.111 1.247H2.413A2.42 2.42 0 000 25.483a2.42 2.42 0 002.413 2.427h5.203a7.232 7.232 0 005.715-2.812l3.56 3.178c.514.462.806 1.122.805 1.815v3.482A2.42 2.42 0 0020.109 36a2.42 2.42 0 002.413-2.427v-3.482a7.3 7.3 0 00-2.431-5.443l-4.292-3.838 2.947-5.339c.186.2.36.413.521.634 2.782 3.845 4.666 5.633 9.389 5.633h.92a2.42 2.42 0 002.413-2.427 2.42 2.42 0 00-2.413-2.427v.004z" />
+															</g>
+														</svg>
+													</div>
+													<span class="player-progress__name">Kilometry</span>
+													<div class="player-progress__number">5498</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="player-story">
+				<div class="container">
+					<h2 class="h2 mb-8">
+						Članky s
+						<span class="text-red" style="font-weight: 400">Jan Čtvrtečka</span>
+					</h2>
+				</div>
+				<section class="c-topstory-section">
+					<div class="row m-0">
+						<div class="c-topstory-section__item">
+							<a class="c-topstory-section__img" href="#">
+								<img src="images/content/1.jpeg" loading="lazy" alt="clanek-1" />
+							</a>
+							<div class="c-topstory-section__info">
+								<ul class="tags">
+									<li>
+										<a href="#" class="tag tag-gold">preview</a>
+									</li>
+									<li>
+										<a href="#" class="tag tag-white">dnes</a>
+									</li>
+								</ul>
+								<h1 class="h2">
+									Dukla skolila Třinec dvěma slepenými góly ve druhé půli
+								</h1>
+							</div>
+						</div>
+						<div class="c-topstory-section__item active">
+							<a class="c-topstory-section__img" href="#">
+								<img src="images/content/2.jpeg" loading="lazy" alt="clanek-2" />
+							</a>
+							<div class="c-topstory-section__info">
+								<ul class="tags">
+									<li>
+										<a href="#" class="tag tag-gold">preview</a>
+									</li>
+									<li>
+										<a href="#" class="tag tag-white">včera</a>
+									</li>
+								</ul>
+								<h2 class="h2">Filip Špatenka v Dukle podepsal víceletou smlouvu</h2>
+							</div>
+						</div>
+						<div class="c-topstory-section__item">
+							<a class="c-topstory-section__img" href="#">
+								<img src="images/content/3.png" loading="lazy" alt="clanek-3" />
+							</a>
+							<div class="c-topstory-section__info">
+								<ul class="tags">
+									<li>
+										<a href="#" class="tag tag-gold">preview</a>
+									</li>
+									<li>
+										<a href="#" class="tag tag-white">dnes</a>
+									</li>
+								</ul>
+								<h2 class="h2">Generálka: Po dvou gólech v druhé půli remíza</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="shop-slider">
+				<div class="container">
+					<div class="shop-slider__inner">
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-red">akce</span>
+								</div>
+								<p>Batoh Jersey s podsádkou</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-2.jpeg" loading="lazy" alt="product" />
+								</div>
+								<p>Tričko bílé - dámské</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-3.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-top">top</span>
+								</div>
+								<p>Batoh Jersey s podsádkou</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-red">akce</span>
+								</div>
+								<p>Dres FKD A-tým Adidas domácí</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-blue">Doporučujeme</span>
+								</div>
+								<p>Malá sada sběratelských kartiček BRAVO DUKLA</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-red">akce</span>
+								</div>
+								<p>Batoh Jersey s podsádkou</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-red">akce</span>
+								</div>
+								<p>Batoh Jersey s podsádkou</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-2.jpeg" loading="lazy" alt="product" />
+								</div>
+								<p>Tričko bílé - dámské</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-3.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-top">top</span>
+								</div>
+								<p>Batoh Jersey s podsádkou</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-red">akce</span>
+								</div>
+								<p>Dres FKD A-tým Adidas domácí</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-blue">Doporučujeme</span>
+								</div>
+								<p>Malá sada sběratelských kartiček BRAVO DUKLA</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+						<div class="shop-slider__col">
+							<a href="#" class="shop-slider__item">
+								<div class="shop-slider__img">
+									<img src="images/content/shop-1.jpeg" loading="lazy" alt="product" />
+									<span class="tag tag-red">akce</span>
+								</div>
+								<p>Batoh Jersey s podsádkou</p>
+								<h5 class="h6">2 200 Kč</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row justify-content-center align-items-center footer-slider">
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-1.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-2.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-3.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-4.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-5.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-6.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-1.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-2.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-3.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-4.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-5.png" loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3 text-center">
+						<a class="footer-slider__item" href="#">
+							<img src="images/content/partner-6.png" loading="lazy" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<a href="#">
+							<img src="images/ico/logo.svg" loading="lazy" alt="logo" /></a>
+						<span class="header-title">Hrdý na svůj klub</span>
+					</div>
+					<ul class="footer__nav">
+						<li>
+							<a href="#">Klub</a>
+						</li>
+						<li>
+							<a href="#">a - tým</a>
+						</li>
+						<li>
+							<a href="#">B - tým</a>
+						</li>
+						<li>
+							<a href="#">Ženy</a>
+						</li>
+						<li>
+							<a href="#">Mládež</a>
+						</li>
+						<li>
+							<a href="#">E - Sport</a>
+						</li>
+						<li>
+							<a href="#">Partneři</a>
+						</li>
+						<li>
+							<a href="#">Vstupenky</a>
+						</li>
+						<li>
+							<a href="#">Fanoušci</a>
+						</li>
+					</ul>
+					<div class="footer__bottom">
+						<ul class="social">
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 0C5.373 0 0 5.374 0 12c0 6.628 5.373 12 12 12 6.628 0 12.001-5.372 12.001-12 0-6.626-5.373-12-12-12zm3.176 11.95h-2.078v7.411h-3.08v-7.41H8.555V9.333h1.465V7.638c0-1.213.576-3.107 3.108-3.107l2.28.008v2.542h-1.655c-.27 0-.653.135-.653.712v1.541h2.348l-.27 2.616z" fill="#FCC824" fill-rule="nonzero" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.001 0c6.628 0 12 5.374 12 12 0 6.628-5.372 12-12 12-6.627 0-12-5.372-12-12 0-6.626 5.373-12 12-12zm2.838 6.335a2.953 2.953 0 00-2.876 3.626 8.384 8.384 0 01-6.087-3.085 2.951 2.951 0 00.914 3.942 2.944 2.944 0 01-1.337-.37v.038A2.955 2.955 0 007.82 13.38a2.969 2.969 0 01-1.333.05 2.956 2.956 0 002.758 2.05 5.923 5.923 0 01-4.372 1.224 8.356 8.356 0 004.527 1.326c5.43 0 8.4-4.499 8.4-8.4a8.75 8.75 0 00-.008-.383 5.98 5.98 0 001.473-1.528 5.875 5.875 0 01-1.696.465A2.958 2.958 0 0018.87 6.55a5.91 5.91 0 01-1.875.717 2.949 2.949 0 00-2.155-.933z" fill="#FCC824" fill-rule="nonzero" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<g fill="#FCC824" fill-rule="nonzero">
+											<path d="M6.878 13.01h.87v4.316h.839V13.01h.868v-.735H6.878zM12.034 9.424c.114 0 .205-.03.272-.093.066-.063.1-.15.1-.26V6.836a.263.263 0 00-.102-.217.412.412 0 00-.27-.084.367.367 0 00-.25.084.271.271 0 00-.094.217v2.237c0 .112.03.199.09.26.058.061.144.092.254.092zM13.885 13.555c-.116 0-.23.03-.343.088a1.15 1.15 0 00-.319.26v-1.628h-.753v5.051h.753v-.285a.96.96 0 00.318.253c.113.054.244.081.39.081.22 0 .39-.07.506-.21.117-.142.175-.344.175-.608V14.49c0-.305-.061-.538-.187-.696-.124-.159-.304-.238-.54-.238zm-.04 2.9c0 .12-.022.204-.065.256-.043.053-.11.08-.201.08a.435.435 0 01-.18-.04.608.608 0 01-.176-.132v-2.322a.522.522 0 01.153-.114.347.347 0 01.158-.037c.1 0 .178.032.232.096.053.066.078.16.078.288v1.924zM11.164 16.432c-.07.08-.146.145-.23.198a.426.426 0 01-.208.078c-.07 0-.12-.019-.153-.059-.03-.039-.047-.102-.047-.19v-2.86h-.744v3.117c0 .223.044.387.13.5.09.11.218.165.39.165a.91.91 0 00.433-.118c.15-.08.292-.194.43-.345v.408h.745V13.6h-.745v2.832z" />
+											<path d="M12.002 0c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12s12-5.372 12-12c0-6.627-5.373-12-12-12zm1.938 5.927h.838v3.147c0 .098.02.168.054.21.034.045.092.067.17.067.062 0 .14-.03.235-.086.093-.06.18-.132.257-.223V5.927h.84v4.105h-.84v-.453a1.76 1.76 0 01-.482.381 1.052 1.052 0 01-.486.132c-.194 0-.34-.062-.439-.185-.097-.12-.147-.304-.147-.55v-3.43zm-3.113.938c0-.317.112-.57.337-.76.227-.187.53-.282.911-.282.347 0 .631.1.854.298.22.197.331.455.331.769v2.12c0 .352-.108.627-.324.825-.22.2-.518.3-.899.3-.366 0-.66-.104-.88-.308-.22-.208-.33-.486-.33-.834V6.865zM8.542 4.468l.613 2.223h.06l.583-2.223h.96L9.659 7.724v2.308h-.944V7.827l-1.124-3.36h.951zm10.984 11.711a2.69 2.69 0 01-2.69 2.69H7.493a2.69 2.69 0 01-2.69-2.69v-2.163a2.69 2.69 0 012.69-2.69h9.345a2.69 2.69 0 012.689 2.69v2.163z" />
+											<path d="M16.134 13.508c-.334 0-.604.1-.815.305-.21.203-.317.468-.317.788v1.676c0 .36.097.64.288.845.192.204.454.307.788.307.372 0 .65-.096.836-.288.189-.194.28-.482.28-.864v-.192h-.765v.17c0 .22-.026.361-.074.425-.049.064-.135.096-.26.096-.118 0-.202-.037-.252-.112-.048-.077-.072-.212-.072-.41v-.7h1.424v-.952c0-.353-.09-.623-.274-.812-.183-.188-.446-.282-.787-.282zm.295 1.466h-.658v-.377c0-.156.024-.27.076-.334.052-.07.137-.103.256-.103.112 0 .197.033.247.103.051.064.078.177.078.334v.377z" />
+										</g>
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<g transform="translate(.002)" fill="#FCC824" fill-rule="nonzero">
+											<circle cx="11.9" cy="12.1" r="2.15" />
+											<path d="M14.585 6.83H9.22c-.781 0-1.464.243-1.903.682-.439.44-.683 1.122-.683 1.903v5.365c0 .781.244 1.464.732 1.952.488.439 1.122.683 1.902.683h5.317c.78 0 1.464-.244 1.903-.683.488-.44.732-1.122.732-1.903V9.463c0-.78-.244-1.414-.683-1.902-.488-.488-1.122-.732-1.952-.732zm-2.683 8.585a3.32 3.32 0 01-3.317-3.317 3.32 3.32 0 013.317-3.318c1.805 0 3.366 1.464 3.366 3.318 0 1.853-1.512 3.317-3.366 3.317zm3.464-6a.77.77 0 01-.78-.78.77.77 0 01.78-.781.77.77 0 01.78.78.77.77 0 01-.78.78z" />
+											<path d="M12 0C5.366 0 0 5.366 0 12s5.366 12 12 12 12-5.366 12-12c.049-6.634-5.366-12-12-12zm6.39 14.83c0 1.121-.39 2.097-1.073 2.78-.683.683-1.658 1.024-2.732 1.024H9.268c-1.073 0-2.048-.341-2.731-1.024-.732-.683-1.074-1.659-1.074-2.78V9.462c0-2.243 1.513-3.804 3.805-3.804h5.366c1.122 0 2.049.39 2.732 1.073.683.683 1.024 1.61 1.024 2.731v5.366z" />
+										</g>
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.002 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.628 0 12-5.373 12-12s-5.372-12-12-12zm6.076 10.893c-1.274 0-2.514-.414-3.469-1.113l-.007 4.757a4.334 4.334 0 11-3.758-4.299v2.337a2.046 2.046 0 101.466 1.962V5.125h2.404a3.364 3.364 0 003.364 3.364v2.404z" fill="#FCC824" fill-rule="nonzero" />
+									</svg> </a>
+							</li>
+
+						</ul>
+						<ul class="footer__links">
+							<li>
+								<a href="#">Kontakty</a>
+							</li>
+							<li>
+								<a href="#">Podmínky použití webu</a>
+							</li>
+							<li>
+								<a href="#">Ochrana soukromí</a>
+							</li>
+						</ul>
+						<button id="scrollToTopBtn"><svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+								<g stroke="#FCC824" stroke-width="1.56" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M6.638 14.123V1.633M.808 7.46l5.83-5.83 5.83 5.83" />
+								</g>
+							</svg></button>
+					</div>
+					<div class="copyright">
+						© FK Dukla Praha - All rights reserved & eSports s.r.o.
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

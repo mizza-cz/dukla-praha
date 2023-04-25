@@ -1,0 +1,14 @@
+{% extends "@components/base/base.twig" %} {% set title = "05.0_player" %} {%
+block main %} {% include "@components/player-section/player-section.twig" %} {%
+include "@components/player-detail/player-detail.twig" %}
+<div class="player-story">
+  <div class="container">
+    <h2 class="h2 mb-8">
+      Članky s
+      <span class="text-red" style="font-weight: 400">Jan Čtvrtečka</span>
+    </h2>
+  </div>
+  {% include "@components/topstory-section/topstory-section.twig" %}
+</div>
+
+{% include "@components/shop-slider/shop-slider.twig" %} {% endblock %}

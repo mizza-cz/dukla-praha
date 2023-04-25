@@ -2,7 +2,7 @@
   &__wrapper {
     margin-bottom: 124px;
     @include media-breakpoint-down(xl) {
-      margin-bottom: 44px;
+      margin-bottom: 40px;
     }
   }
   &__inner {
@@ -31,6 +31,9 @@
       .players-section__name {
         text-decoration-color: inherit;
       }
+      &::before {
+        transform: scale(1.1);
+      }
     }
     &.players-section__item--dukla {
       &::after {
@@ -58,6 +61,7 @@
       left: 0;
       top: 0;
       right: 0;
+      transition: var(--transition);
       background-image: url("../images/content/bg.png");
       background-size: cover;
       background-repeat: no-repeat;

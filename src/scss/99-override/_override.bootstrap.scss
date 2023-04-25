@@ -1,0 +1,48 @@
+/*! purgecss start ignore */
+.text-red {
+  color: var(--color-red);
+}
+.bg-red {
+  background-color: var(--color-red);
+}
+.text-yellow {
+  color: var(--color-yellow);
+}
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+.btn {
+  font-size: 12px;
+  line-height: 1.333;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  padding: 10px 12.5px 8px;
+  background-color: var(--color-yellow);
+  display: block;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+  min-width: 89px;
+  &:hover {
+    color: var(--color-red);
+    box-shadow: 0px 8px 15px rgba(#671219, 0.1);
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 16px;
+  }
+}
+.btn.btn-gray {
+  background-color: var(--color-gray);
+}
+.btn.btn-white {
+  background-color: var(--color-light);
+  color: var(--color-red);
+  &:hover{
+    background-color: var(--color-yellow);
+  }
+}
+/*! purgecss end ignore */

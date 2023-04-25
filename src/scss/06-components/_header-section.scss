@@ -34,29 +34,7 @@
   .h1 {
     margin-bottom: 16px;
   }
-  .btn {
-    font-size: 12px;
-    line-height: 1.333;
-    text-transform: uppercase;
-    color: var(--color-dark);
-    padding: 10px 12.5px 8px;
-    background-color: var(--color-yellow);
-    display: block;
-    font-weight: 900;
-    text-decoration: none;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-    border: none;
-    outline: none;
-    margin-bottom: 16px;
-    min-width: 89px;
-    @include media-breakpoint-down(sm) {
-      margin-top: 16px;
-    }
-  }
-  .btn.btn-gray {
-    background-color: var(--color-gray);
-  }
+ 
   &__nav {
     margin-right: -8px;
     margin-left: -8px;

@@ -1,0 +1,18 @@
+.nav-tabs {
+  margin-left: -6px;
+  margin-right: -6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: none;
+  li {
+    padding: 0 6px;
+    margin-bottom: 12px;
+
+    display: block;
+    a {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>soccer-ball</title>
+    <g id="🚂-Playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail-hráče" transform="translate(-1172.000000, -943.000000)" stroke="#671219" stroke-width="2">
+            <g id="soccer-ball" transform="translate(1173.000000, 944.000000)">
+                <path d="M18.5,0 C8.28273213,0 0,8.28273213 0,18.5 C0,28.7172679 8.28273213,37 18.5,37 C28.7172679,37 37,28.7172679 37,18.5 C37,8.28273213 28.7172679,0 18.5,0 Z" id="Path"></path>
+                <polygon id="Path" points="13.4406522 26.3166522 10.2956522 16.6146087 18.520913 10.6206087 26.7461739 16.6146087 23.606 26.3166522"></polygon>
+                <polyline id="Path" points="25.5943478 1.40921739 18.520913 4.43034783 11.4506957 1.40921739"></polyline>
+                <polyline id="Path" points="4.52847826 6.37365217 5.21378261 14.1307826 0.0643478261 20.0572174"></polyline>
+                <polyline id="Path" points="2.67847826 28.0717391 10.2972609 29.8268261 14.298087 36.5206087"></polyline>
+                <polyline id="Path" points="22.7582174 36.5077391 26.7461739 29.8236087 34.3311739 28.0765652"></polyline>
+                <polyline id="Path" points="36.9388696 20.0105652 31.8264348 14.1259565 32.5085217 6.41708696"></polyline>
+                <line x1="18.520913" y1="4.43034783" x2="18.520913" y2="10.6206087" id="Path"></line>
+                <line x1="26.7461739" y1="16.6146087" x2="31.8264348" y2="14.1259565" id="Path"></line>
+                <line x1="23.606" y1="26.3166522" x2="26.7461739" y2="29.8236087" id="Path"></line>
+                <line x1="13.4406522" y1="26.3166522" x2="10.2972609" y2="29.8268261" id="Path"></line>
+                <line x1="5.21378261" y1="14.1307826" x2="10.2956522" y2="16.6146087" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('a[href^="#"]').bind("click", function (e) {
+  $('.header-section__nav a[href^="#"]').bind("click", function (e) {
     var anchor = $(this);
     $("html, body")
       .stop()

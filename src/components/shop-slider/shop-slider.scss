@@ -1,5 +1,8 @@
 .shop-slider {
   padding: 50px 0;
+  @include media-breakpoint-down(md) {
+    padding: 24px 0;
+  }
   .slick-slide > div {
     height: 100%;
   }

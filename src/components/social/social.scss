@@ -24,3 +24,23 @@
     }
   }
 }
+.social-player.social {
+  margin-left: -6px;
+  margin-bottom: 8px;
+  margin-right: 14px;
+  @include media-breakpoint-down(lg) {
+    margin-right: -6px;
+    margin-bottom: 24px;
+  }
+  .social__item {
+    padding: 0 6px;
+  }
+  .social__link {
+    width: 32px;
+    height: 32px;
+  }
+  svg path,
+  svg g {
+    fill: #fff;
+  }
+}
