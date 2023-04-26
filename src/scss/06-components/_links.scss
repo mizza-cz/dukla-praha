@@ -1,0 +1,19 @@
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+  li {
+    padding: 0 4px;
+    display: block;
+    margin-bottom: 8px;
+    a {
+      display: block;
+      transition: var(--transition);
+      line-height: 1;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

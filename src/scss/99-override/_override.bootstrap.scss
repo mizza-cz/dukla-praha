@@ -4,12 +4,16 @@
 }
 .bg-red {
   background-color: var(--color-red);
+  color: #fff !important;
 }
 .text-yellow {
   color: var(--color-yellow);
 }
 .bg-yellow {
   background-color: var(--color-yellow);
+}
+.text-white {
+  color: var(--color-light);
 }
 .btn {
   font-size: 12px;
@@ -41,7 +45,7 @@
 .btn.btn-white {
   background-color: var(--color-light);
   color: var(--color-red);
-  &:hover{
+  &:hover {
     background-color: var(--color-yellow);
   }
 }

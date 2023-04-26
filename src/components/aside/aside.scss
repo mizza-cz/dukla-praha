@@ -1,0 +1,45 @@
+.aside {
+  &__menu {
+    display: block;
+
+    li {
+      padding-right: 30px;
+      display: block;
+      border-bottom: 1px solid var(--color-lines);
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    a {
+      padding: 14px 0px 12px 0;
+      text-decoration-color: transparent;
+      display: block;
+      position: relative;
+      color: rgba(0, 17, 15, 1);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0px;
+      line-height: 24px;
+      transition: var(--transition);
+      &:hover {
+        color: var(--color-red);
+        &::before {
+          right: 5px;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 20px;
+        background-image: url("../images/ico/arrow-aside.svg");
+        width: 8px;
+        height: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(-90deg);
+        transition: var(--transition);
+      }
+    }
+  }
+}

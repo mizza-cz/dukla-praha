@@ -6,7 +6,7 @@
 .select2-container {
   .select2-selection--single {
     height: auto;
-    padding: 1px 38px 2px 24px;
+    padding: 0.3rem 1.6rem 0.4rem 1.1rem;
     border-color: var(--color-red);
     outline: solid transparent 1px;
     transition: all 0.3s;
@@ -49,8 +49,8 @@
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
-  top: 2px;
-  right: 24px;
+  top: 0.2rem;
+  right: 1.2rem;
   width: 10px;
   b {
     background-image: url("../images/ico/chevron.svg");
@@ -98,9 +98,14 @@
   padding: 0;
 }
 .select2-container--default .select2-selection--single {
-  border: 1px solid var(--color-dark);
-  height: 33px;
-  border-radius: 3px;
+  border: 1px solid var(--color-lines);
+  height: 38.44px;
+  border-radius: 4px;
+  background-color: rgba(247, 248, 249, 1);
+  width: 12.5rem;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
 }
 .hp-tabs-section {
   .select2-container--default

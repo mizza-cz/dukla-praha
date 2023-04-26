@@ -79,10 +79,11 @@
         letter-spacing: 0px;
         line-height: 18px;
         text-transform: uppercase;
-        text-decoration-color: transparent;
+        text-decoration: none;
         letter-spacing: 0.5px;
+        transition: var(--transition);
         &:hover {
-          text-decoration-color: inherit;
+          color: var(--color-yellow);
         }
       }
     }
@@ -125,9 +126,10 @@
         color: var(--color-light);
         font-size: 14px;
         font-weight: 500;
-        text-decoration-color: transparent;
+        text-decoration: none;
+        transition: var(--transition);
         &:hover {
-          text-decoration-color: inherit;
+          color: var(--color-yellow);
         }
       }
     }
@@ -152,12 +154,18 @@
   cursor: pointer;
   background-color: transparent;
   right: 30px;
+  transition: var(--transition);
+
   @include media-breakpoint-down(lg) {
     top: 0;
   }
 
   svg {
-    height: 16px;
-    width: 13px;
+    height: 18px;
+    width: 18px;
+    transition: var(--transition);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }

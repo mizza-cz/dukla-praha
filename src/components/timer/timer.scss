@@ -1,0 +1,41 @@
+.timer {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  &__wrapper {
+    display: block;
+    text-decoration: none;
+  }
+  &__label {
+    display: block;
+    font-weight: 400;
+  }
+  &__value {
+    display: block;
+    padding-right: 5px;
+    position: relative;
+  }
+  &__item {
+    text-align: center;
+    padding: 0 12px;
+    padding-right: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    display: flex;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: var(--color-yellow);
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+}
+#timer-seconds {
+  display: none;
+}

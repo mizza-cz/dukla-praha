@@ -1,62 +1,71 @@
 <section class="archive-section">
   <div class="container">
+ 
     <div class="header-section mb-10">
       <h1 class="h1">Archiv článků</h1>
       <div class="header-section__row">
-        <div class="row gy-6">
-          <div class="col-lg-3 col-sm-6 col-12">
-            <label class="o-select header-section__label">
-              <select class="js-select">
-                <option>Měsíc</option>
-                <option>leden</option>
-                <option>únor</option>
-                <option>březen</option>
-                <option>duben</option>
-                <option>květen</option>
-                <option>červen</option>
-                <option>červenec</option>
-                <option>srpen</option>
-                <option>září</option>
-                <option>říjen</option>
-                <option>listopad</option>
-                <option>prosinec</option>
-              </select>
-            </label>
+        <form action="" class="header-section__form header-section__label">
+          <div class="header-section__category">Vyhledávání</div>
+          <div class="header-section__input">
+            <input type="text" placeholder="Hledaný text" />
+            <button class="header-section__btn">
+              <img
+                src="images/ico/search-menu.svg"
+                loading="lazy"
+                alt="search-menu"
+              />
+            </button>
           </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <label class="o-select header-section__label">
-              <select class="js-select">
-                <option>Kategorie</option>
-                <option>Aktuální zprávy</option>
-                <option>Rozhovory</option>
-                <option>Reportáže</option>
-                <option>Mládež</option>
-                <option>Tiskové zprávy</option>
-                <option>Soutěže a akce pro fanoušky</option>
-                <option>Preview k zápasu</option>
-                <option>Ohlasy po utkání</option>
-                <option>Sledge – článek</option>
-                <option>Sledge – reportáž</option>
-                <option>Historie</option>
-                <option>Fan Club</option>
-              </select>
-            </label>
-          </div>
-          <div class="col-12 col-lg-6">
-            <form action="" class="header-section__form">
-              <div class="row">
-                <div class="col-sm-8 col-12">
-                  <label class="header-section__input">
-                    <input type="text" placeholder="Hledat v článcích..." />
-                  </label>
-                </div>
-                <div class="col-sm-4 col-12">
-                  <button class="btn">Hledat</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        </form>
+
+        <label class="o-select header-section__label">
+          <div class="header-section__category">Kategorie</div>
+          <select class="js-select">
+            <option>Kategorie</option>
+            <option>Aktuální zprávy</option>
+            <option>Rozhovory</option>
+            <option>Reportáže</option>
+            <option>Mládež</option>
+            <option>Tiskové zprávy</option>
+            <option>Soutěže a akce pro fanoušky</option>
+            <option>Preview k zápasu</option>
+            <option>Ohlasy po utkání</option>
+            <option>Sledge – článek</option>
+            <option>Sledge – reportáž</option>
+            <option>Historie</option>
+            <option>Fan Club</option>
+          </select>
+        </label>
+        <label class="o-select header-section__label">
+          <div class="header-section__category">Rok</div>
+          <select class="js-select">
+            <option>Rok</option>
+            <option>2018/2019</option>
+            <option>2019/2020</option>
+            <option>2020/2021</option>
+            <option>2021/2022</option>
+            <option>2022/2023</option>
+            <option>2023/2024</option>
+          </select>
+        </label>
+        <label class="o-select header-section__label">
+          <div class="header-section__category">Měsíc</div>
+          <select class="js-select">
+            <option>Měsíc</option>
+            <option>leden</option>
+            <option>únor</option>
+            <option>březen</option>
+            <option>duben</option>
+            <option>květen</option>
+            <option>červen</option>
+            <option>červenec</option>
+            <option>srpen</option>
+            <option>září</option>
+            <option>říjen</option>
+            <option>listopad</option>
+            <option>prosinec</option>
+          </select>
+        </label>
       </div>
     </div>
     <div class="row g-5">

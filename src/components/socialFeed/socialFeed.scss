@@ -1,0 +1,213 @@
+.socialFeed {
+  &__bottom {
+    position: relative;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 28px;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+.socialFeed__tabs {
+  display: flex;
+  margin-left: -12px;
+  margin-right: -12px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+    flex-wrap: wrap;
+  }
+  li {
+    padding: 0 12px;
+    @include media-breakpoint-down(lg) {
+      padding: 0 8px;
+    }
+  }
+  .filter {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    opacity: 1;
+    color: RGB(131, 139, 155);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+}
+.socialFeed__img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.socialFeed__items {
+  display: block;
+  columns: 13rem;
+  gap: 20px;
+  position: relative;
+  max-height: 520px;
+  transition: var(--transition);
+  overflow: hidden;
+  padding-bottom: 0;
+  @include media-breakpoint-down(lg) {
+    max-height: 100%;
+  }
+  &.active {
+    max-height: max-content;
+    padding-bottom: 44px;
+  }
+  &.active::before {
+    display: none;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60%;
+    display: block;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .mix {
+    margin-bottom: 20px;
+    break-inside: avoid;
+  }
+}
+.socialFeed__item {
+  border-radius: 8px;
+  border: 1px solid rgba(228, 228, 228, 1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0),
+    0px 10px 24px rgba(0, 0, 0, 0.052092);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 24px;
+  text-decoration: none;
+  transition: var(--transition);
+  &:hover {
+    .socialFeed__box span {
+      color: var(--color-red);
+    }
+  }
+  .p2 {
+    padding-left: 18px;
+    padding-right: 18px;
+    display: block;
+    margin-bottom: 12px;
+    line-height: 1.286;
+    letter-spacing: 0.3px;
+  }
+}
+.socialFeed__box {
+  padding-top: 21px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 14px;
+  span {
+    color: rgba(172, 183, 194, 1);
+    font-family: "Inter-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 28px;
+    display: block;
+    line-height: 14px;
+    transition: var(--transition);
+  }
+  .h6 {
+    letter-spacing: 0.4px;
+    position: relative;
+    padding-left: 28px;
+    line-height: 1;
+    margin-bottom: 6px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: 0px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+.mix__fb .socialFeed__box .h6::before {
+  background-image: url("../images/ico/fb-social.svg");
+}
+.mix__tiktok .socialFeed__box .h6::before {
+  background-image: url("../images/ico/tiktok-social.svg");
+}
+.mix__youtube .socialFeed__box .h6::before {
+  background-image: url("../images/ico/youtube-social.svg");
+}
+.mix__twitter .socialFeed__box .h6::before {
+  background-image: url("../images/ico/twitter-social.svg");
+}
+.mix__instagram .socialFeed__box .h6::before {
+  background-image: url("../images/ico/instagram-social.svg");
+}
+
+.noContent {
+  display: none;
+}
+#loadMore {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: fit-content;
+  bottom: 15%;
+  cursor: pointer;
+  color: var(--color-light);
+  padding: 9px 12px 10px 12px;
+  transition: var(--transition);
+  @include media-breakpoint-down(lg) {
+    bottom: 0%;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.filter.mixitup-control-active {
+  color: var(--color-red);
+}
+.socialFeed__tabs {
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
