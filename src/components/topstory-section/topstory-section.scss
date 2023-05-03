@@ -16,7 +16,7 @@
     max-width: 100%;
     position: relative;
     transition: all 0.3s;
-
+    cursor: pointer;
     height: 34.8rem;
     @include media-breakpoint-only(xxl) {
       max-width: 25%;

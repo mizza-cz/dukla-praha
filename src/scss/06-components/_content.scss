@@ -1,10 +1,27 @@
 .o-content {
+  q {
+    display: block;
+    margin-bottom: 40px;
+    border-left: 4px solid var(--color-yellow);
+    &::before,
+    &::after {
+      display: none;
+    }
+    p {
+      padding-left: 28px;
+      display: block;
+      margin: 0;
+    }
+  }
+  h5 {
+    margin-bottom: 12px;
+  }
   ul {
     color: rgba(0, 17, 15, 1);
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    margin: 24px 0;
+    margin: 0px 0 24px;
     > li {
       position: relative;
       padding-left: 24px;
@@ -83,6 +100,15 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+.p1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.333;
+  color: #00110f;
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
 }
 .p2 {
   color: var(--color-dark);
@@ -172,5 +198,16 @@ p {
   @include media-breakpoint-down(md) {
     font-size: 15px;
     line-height: 1.2;
+  }
+}
+
+.perex {
+  color: rgba(0, 17, 15, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 40px;
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
   }
 }

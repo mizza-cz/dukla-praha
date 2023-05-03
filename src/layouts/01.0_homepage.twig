@@ -1,13 +1,9 @@
-{% extends "@components/base/base.twig" %}
-
-{% set title = "01.0_homepage" %}
-
-{% block main %}
-
-{% include "@components/topstory-section/topstory-section.twig" %}
-{% include "@components/shop-slider/shop-slider.twig" %}
-{% include "@components/scoreboard/scoreboard.twig" %}
-{% include "@components/calendar/calendar.twig" %}
-{% include "@components/hp-statistics/hp-statistics.twig" %}
-{% include "@components/socialFeed/socialFeed.twig" %}
-{% endblock %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/article/article.twig" %} {% include
+"@components/article/article-2.twig" %} {% include
+"@components/topstory-section/topstory-section.twig" %} {% include
+"@components/shop-slider/shop-slider.twig" %} {% include
+"@components/scoreboard/scoreboard.twig" %}
+<!-- {% include "@components/calendar/calendar.twig" %} -->
+{% include "@components/hp-statistics/hp-statistics.twig" %} {% include
+"@components/socialFeed/socialFeed.twig" %} {% endblock %}
