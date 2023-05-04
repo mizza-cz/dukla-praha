@@ -80,6 +80,18 @@
     width: 100%;
     height: auto;
   }
+  .ratio {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+  p iframe {
+    margin: 0;
+  }
+  iframe {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
   &::after {
     display: table;
     clear: both;
