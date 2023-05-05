@@ -1,0 +1,89 @@
+.juniors-section {
+  padding-bottom: 60px;
+  &__players {
+    .players-section__inner:first-child {
+      margin-top: 0;
+    }
+  }
+  &__menu {
+    margin-bottom: 32px;
+  }
+  &__teams {
+    margin-left: -4px;
+    margin-right: -4px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    li {
+      padding: 0 4px;
+      margin-bottom: 8px;
+    }
+
+    a {
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--color-red);
+      border-radius: 4px !important;
+      border: 1px solid var(--color-red);
+      padding-left: 8px;
+      padding-right: 8px;
+      transition: var(--transition);
+      &:hover {
+        background-color: var(--color-red);
+        border-color: var(--color-red);
+        color: var(--color-yellow);
+      }
+    }
+    .active {
+      background-color: var(--color-red);
+      border-color: var(--color-red);
+      color: var(--color-yellow);
+    }
+  }
+
+  &__submenu {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 16px;
+      margin-left: -8px;
+      margin-right: -8px;
+      flex-wrap: wrap;
+    }
+    li {
+      padding: 0 12px;
+      @include media-breakpoint-down(lg) {
+        padding: 0 8px;
+      }
+    }
+    .active {
+      color: var(--color-red);
+    }
+    a {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      padding: 0;
+      opacity: 1;
+      color: RGB(131, 139, 155);
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+}
