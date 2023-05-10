@@ -5,17 +5,31 @@
     @include media-breakpoint-down(lg) {
       max-width: 100%;
     }
+    .title-small {
+      visibility: hidden;
+      opacity: 0;
+      font-size: 0;
+      line-height: 0;
+    }
+    .title-full {
+      visibility: visible;
+      opacity: 1;
+      font-size: 32px;
+      line-height: 1.25;
+      transition: 0;
+    }
   }
   .h2 {
     color: var(--color-light);
     margin-bottom: 12px;
   }
+
   &__item {
     padding: 0;
     z-index: 1;
     max-width: 100%;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.5s;
     cursor: pointer;
     height: 34.8rem;
     @include media-breakpoint-only(xxl) {
@@ -47,9 +61,6 @@
       }
     }
     &:hover {
-      .h1 {
-        text-decoration-color: var(--color-light);
-      }
     }
   }
   &__img {
@@ -98,5 +109,37 @@
     @include media-breakpoint-down(lg) {
       padding: 24px;
     }
+  }
+}
+.title-small {
+  visibility: visible;
+  opacity: 1;
+  font-size: 32px;
+  line-height: 1.25;
+  @include media-breakpoint-down(md) {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+  @include media-breakpoint-down(xxl) {
+    display: none;
+  }
+}
+.title-full {
+  opacity: 0;
+  width: 100%;
+  visibility: hidden;
+  transition: 0.5s opacity, 0.4s font-size;
+  font-size: 0;
+  line-height: 0;
+  @include media-breakpoint-down(xxl) {
+    visibility: visible;
+    opacity: 1;
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 28px;
+    line-height: 1.25;
   }
 }
