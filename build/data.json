@@ -1,0 +1,20 @@
+[
+    {
+        "date": "5/15/2023",
+        "title": "Webinar on JavaScript",
+        "logo": "./images/ico/club-2.svg",
+        "link": "https://example.com/webinar"
+    },
+    {
+        "date": "5/22/2023",
+        "title": "Conference on Data Science",
+        "logo": "./images/ico/club-2.svg",
+        "link": "https://example.com/conference"
+    },
+    {
+        "date": "5/30/2023",
+        "title": "Hackathon on AI",
+        "logo": "./images/ico/logo.svg",
+        "link": "https://example.com/hackathon"
+    }
+]

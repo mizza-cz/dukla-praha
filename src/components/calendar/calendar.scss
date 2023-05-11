@@ -86,6 +86,7 @@
   line-height: 60px;
   text-transform: uppercase;
   transition: var(--transition);
+  position: relative;
   @include media-breakpoint-down(lg) {
     font-size: 24px;
     line-height: normal;
@@ -101,12 +102,24 @@
   color: var(--color-red);
 }
 .event {
-  font-size: 10px;
-  padding: 3px;
-  color: white;
-  border-radius: 5px;
-  max-height: 55px;
-  overflow: hidden;
+  font-size: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  line-height: 0;
+  height: inherit;
+
+  .logo {
+    width: 48px;
+    height: auto;
+    right: 0;
+    top: 0;
+    display: block;
+    object-fit: contain;
+    position: initial;
+    top: 0;
+    right: 0;
+  }
 }
 .padding {
   cursor: default !important;
