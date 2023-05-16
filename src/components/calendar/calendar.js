@@ -36,11 +36,14 @@ function load() {
     day: "numeric",
   });
   const paddingDays = weekdays.indexOf(dateString.split(", ")[0]);
+  const monthDisplay = document.getElementById("monthDisplay");
 
-  document.getElementById("monthDisplay").innerText = `${dt.toLocaleDateString(
-    "cs-Cz",
-    { month: "long" }
-  )} ${year}`;
+  if (monthDisplay !== null) {
+    monthDisplay.innerText = `${dt.toLocaleDateString("cs-Cz", {
+      month: "long",
+    })} ${year}`;
+  } else {
+  }
 
   calendar.innerHTML = "";
 
@@ -107,19 +110,26 @@ function load() {
 }
 
 function initButtons() {
-  document.getElementById("nextButton").addEventListener("click", () => {
-    nav++;
-    load();
-  });
+  const nextButton = document.getElementById("nextButton");
+  const backButton = document.getElementById("backButton");
 
-  document.getElementById("backButton").addEventListener("click", () => {
-    nav--;
-    load();
-  });
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+      nav++;
+      load();
+    });
+  }
+
+  if (backButton) {
+    backButton.addEventListener("click", () => {
+      nav--;
+      load();
+    });
+  }
 }
 
 initButtons();
-load();
+// load();
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "data.json", true);
