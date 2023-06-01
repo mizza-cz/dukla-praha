@@ -25,7 +25,14 @@
 </head>
 
 <body>
-	<script></script>
+	<!-- <script type="text/javascript">
+      var stripType = 10;
+      var stripGlExtraCode = 60;
+      var js = document.createElement("script");
+      js.src =
+        "https://gambrinusliga.s3-external-3.amazonaws.com/strip/strip-utf8.js";
+      document.getElementsByTagName("body")[0].appendChild(js);
+    </script> -->
 	<div class="base">
 		<header class="header">
 			<div class="container">
@@ -635,14 +642,14 @@
 			</div>
 			<section class="c-topstory-section">
 				<div class="row m-0">
-					<div class="c-topstory-section__item" data-bs-toggle="modal" data-bs-target="#myModal">
+					<div class="c-topstory-section__item active" data-bs-toggle="modal" data-bs-target="#myModal">
 						<div class="c-topstory-section__img">
 							<img src="images/content/1.jpeg" loading="lazy" alt="clanek-1" />
 						</div>
 						<div class="c-topstory-section__info">
 							<ul class="tags">
 								<li>
-									<a href="#" class="tag tag-gold">preview</a>
+									<a href="#" class="tag tag-gold">U19</a>
 								</li>
 								<li>
 									<a href="#" class="tag tag-white">dnes</a>
@@ -654,14 +661,14 @@
 							</h1>
 						</div>
 					</div>
-					<div class="c-topstory-section__item active" data-bs-toggle="modal" data-bs-target="#myModal">
+					<div class="c-topstory-section__item" data-bs-toggle="modal" data-bs-target="#myModal">
 						<div class="c-topstory-section__img">
 							<img src="images/content/2.jpeg" loading="lazy" alt="clanek-2" />
 						</div>
 						<div class="c-topstory-section__info">
 							<ul class="tags">
 								<li>
-									<a href="#" class="tag tag-gold">preview</a>
+									<a href="#" class="tag tag-gold">U12</a>
 								</li>
 								<li>
 									<a href="#" class="tag tag-white">včera</a>
@@ -680,7 +687,7 @@
 						<div class="c-topstory-section__info">
 							<ul class="tags">
 								<li>
-									<a href="#" class="tag tag-gold">preview</a>
+									<a href="#" class="tag tag-gold">U6</a>
 								</li>
 								<li>
 									<a href="#" class="tag tag-white">dnes</a>
@@ -847,19 +854,19 @@
 												<div class="col-md-4">
 													<div class="scoreboard__number win">0:5</div>
 												</div>
-												<div class="col-12">
-													<ul class="links">
-														<li>
-															<a href="#" data-bs-toggle="modal" data-bs-target="#matchModal" class="tag tag-red">
-																report
-															</a>
-														</li>
-														<li>
-															<a href="#" class="tag tag-red">galerie</a>
-														</li>
-													</ul>
-												</div>
 											</div>
+										</div>
+										<div class="col-12">
+											<ul class="links">
+												<li>
+													<a href="#" data-bs-toggle="modal" data-bs-target="#matchModal" class="tag tag-red">
+														report
+													</a>
+												</li>
+												<li>
+													<a href="#" class="tag tag-red">galerie</a>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -911,22 +918,25 @@
 														<div class="col-md-4">
 															<div class="scoreboard__number">so 15. 4. 16:30</div>
 														</div>
-														<div class="col-12">
-															<ul class="links">
-																<li>
-																	<a href="#" data-bs-toggle="modal" data-bs-target="#matchModal" class="tag tag-gold">
-																		Preview
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="tag tag-gold"> Vstupenky</a>
-																</li>
-																<li>
-																	<a href="#" class="tag tag-green">Onlajn</a>
-																</li>
-															</ul>
-														</div>
 													</div>
+												</div>
+												<div class="col-12">
+													<ul class="links">
+														<li>
+															<a href="#" data-bs-toggle="modal" data-bs-target="#matchModal" class="tag tag-gold">
+																Preview
+															</a>
+														</li>
+														<li>
+															<a href="#" class="tag tag-gold"> Vstupenky</a>
+														</li>
+														<li>
+															<a href="#" class="tag tag-green">Onlajn</a>
+														</li>
+														<li>
+															<a href="#" class="tag tag-green">Stream</a>
+														</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -953,14 +963,14 @@
 														<div class="col-md-4">
 															<div class="scoreboard__number">st 19. 4. 17:00</div>
 														</div>
-														<div class="col-12">
-															<ul class="links">
-																<li>
-																	<a href="#" class="tag tag-gold">Vstupenky</a>
-																</li>
-															</ul>
-														</div>
 													</div>
+												</div>
+												<div class="col-12">
+													<ul class="links">
+														<li>
+															<a href="#" class="tag tag-gold">Vstupenky</a>
+														</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -1030,13 +1040,10 @@
 										<a class="tab" data-id="asist" href="#"> Asistence </a>
 									</li>
 									<li class="">
-										<a class="tab" data-id="zapasy" href="#"> Zápasy </a>
+										<a class="tab" data-id="minuty" href="#"> Odehrané minuty </a>
 									</li>
 									<li class="">
 										<a class="tab" data-id="kilometry" href="#"> Kilometry </a>
-									</li>
-									<li class="">
-										<a class="tab" data-id="karty" href="#"> Žluté karty </a>
 									</li>
 								</ul>
 								<div class="tab-wrapper">
@@ -1158,7 +1165,7 @@
 											</li>
 										</ol>
 									</div>
-									<div class="tab-wrap" id="zapasy">
+									<div class="tab-wrap" id="minuty">
 										<ol class="top-score__list">
 											<li>
 												<div class="top-score__item">
@@ -1218,65 +1225,6 @@
 										</ol>
 									</div>
 									<div class="tab-wrap" id="kilometry">
-										<ol class="top-score__list">
-											<li>
-												<div class="top-score__item">
-													<div class="top-score__img">
-														<img src="images/content/players.jpeg" loading="lazy" alt="player" />
-													</div>
-													<a class="top-score__name" href="#">
-														<span>Ondřej</span>Ullaman
-													</a>
-													<div class="top-score__number">10</div>
-												</div>
-											</li>
-											<li>
-												<div class="top-score__item">
-													<div class="top-score__img">
-														<img src="images/content/player-section.png" loading="lazy" alt="player" />
-													</div>
-													<a class="top-score__name" href="#">
-														<span>Ondřej</span>Ullaman
-													</a>
-													<div class="top-score__number">8</div>
-												</div>
-											</li>
-											<li>
-												<div class="top-score__item">
-													<div class="top-score__img">
-														<img src="images/content/player-section.png" loading="lazy" alt="player" />
-													</div>
-													<a class="top-score__name" href="#">
-														<span>Tomáš</span> Vavroušek
-													</a>
-													<div class="top-score__number">6</div>
-												</div>
-											</li>
-											<li>
-												<div class="top-score__item">
-													<div class="top-score__img">
-														<img src="images/content/player-section.png" loading="lazy" alt="player" />
-													</div>
-													<a class="top-score__name" href="#">
-														<span>Quadri Adebayo </span>Adediran
-													</a>
-													<div class="top-score__number">5</div>
-												</div>
-											</li>
-											<li>
-												<div class="top-score__item">
-													<div class="top-score__img">
-														<img src="images/content/player-section.png" loading="lazy" alt="player" />
-													</div>
-													<a class="top-score__name" href="#">
-														<span>Ondřej</span>Ullaman
-													</a>
-													<div class="top-score__number">4</div>
-												</div>
-											</li>
-										</ol>
-									</div>
-									<div class="tab-wrap" id="karty">
 										<ol class="top-score__list">
 											<li>
 												<div class="top-score__item">

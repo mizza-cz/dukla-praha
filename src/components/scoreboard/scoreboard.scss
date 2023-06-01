@@ -1,9 +1,9 @@
 .scoreboard {
   margin-bottom: 70px;
+  .links {
+    justify-content: center;
+  }
   @include media-breakpoint-down(md) {
-    .links {
-      justify-content: center;
-    }
   }
   .win,
   .lose {
