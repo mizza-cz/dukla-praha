@@ -97,16 +97,16 @@
   }
 }
 
-.player-list {
-  margin-bottom: 40px;
+.player-story {
   .player-progress__icon {
     width: 80px;
     height: 80px;
   }
-  &__item {
+  .player-list__item.post {
     padding: 24px 16px 16px;
-    aspect-ratio: 460/280;
     width: 100%;
+    aspect-ratio: 450/320;
+    display: block;
     text-align: center;
     display: flex;
     align-items: center;
