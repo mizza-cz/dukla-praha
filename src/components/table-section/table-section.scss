@@ -1,6 +1,6 @@
 .table-section {
   margin-bottom: 40px;
-  
+
   table {
     th:first-child,
     td:first-child {
@@ -15,9 +15,19 @@
 
     td {
       width: 80px;
+      vertical-align: middle;
     }
     td:nth-child(2) {
       width: auto;
+    }
+    img {
+      width: 20px;
+      height: auto;
+      object-fit: contain;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      margin-right: 10px;
     }
   }
 }
