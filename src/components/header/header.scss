@@ -172,7 +172,6 @@
 }
 .nav-item {
   padding: 0 0.825rem;
-  position: relative;
 }
 .dropdown {
   &-toggle {
@@ -182,10 +181,11 @@
   }
   &-menu {
     position: absolute;
+    background-color: var(--color-yellow);
+    z-index: 20;
     top: 100%;
     left: 0px;
-    z-index: 20;
-    display: none;
+    right: 0;
     float: left;
     min-width: 9rem;
     padding: 8px 16px;
@@ -194,10 +194,19 @@
     color: white;
     text-align: left;
     list-style: none;
-    background-color: var(--color-yellow);
     background-clip: padding-box;
     overflow: hidden;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 46px;
+    padding-bottom: 32px;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: none;
 
     @include media-breakpoint-down(xl) {
       text-align: center;
@@ -214,6 +223,7 @@
       background-color: var(--color-red);
       padding-right: 0;
       padding-top: 0;
+      padding-bottom: 0;
       li {
         margin-bottom: 8px;
       }
@@ -221,7 +231,22 @@
     &[data-bs-popper] {
       margin-top: 0;
     }
+    &__col {
+      flex: 0 0 25%;
+      max-width: 25%;
+      padding: 0 20px;
+      margin-bottom: 0;
+      li {
+        margin-bottom: 8px;
+      }
+      @include media-breakpoint-down(xl) {
+        padding: 0;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
   }
+
   &-item {
     display: block;
     width: 100%;
@@ -235,7 +260,6 @@
     white-space: nowrap;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid var(--color-red);
     text-decoration: none;
     color: var(--color-red);
     line-height: 118%;
@@ -260,16 +284,12 @@
       }
     }
   }
-  li:last-child .dropdown-item {
-    border-bottom: none !important;
-  }
 }
 .navbar-expand-xl {
   @include media-breakpoint-only(lg) {
     flex-wrap: wrap;
   }
   .navbar-collapse {
-    position: relative;
     @include media-breakpoint-down(xl) {
       background-color: var(--color-red);
       position: absolute;
@@ -367,11 +387,11 @@
   .navbar .nav-item .dropdown-menu {
     display: none;
     &.show {
-      display: block;
+      display: flex;
     }
   }
   .nav-item:hover .dropdown-menu {
-    display: block;
+    display: flex;
   }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
