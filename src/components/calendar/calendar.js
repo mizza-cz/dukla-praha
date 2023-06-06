@@ -107,6 +107,16 @@ function load() {
 
     calendar.appendChild(daySquare);
   }
+  var components = document.getElementsByClassName("day");
+  for (var i = 0; i < components.length; i++) {
+    var component = components[i];
+
+    // Проверяем наличие элемента с классом "event" внутри компонента
+    if (component.querySelector(".event")) {
+      // Добавляем класс "day-bg" к классу "day"
+      component.classList.add("day-bg");
+    }
+  }
 }
 
 function initButtons() {

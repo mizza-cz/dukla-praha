@@ -75,5 +75,88 @@
         "date": "5/17/2023",
         "logo": "./images/ico/club-2.svg",
         "links": []
+    },
+    {
+        "title": "Event title",
+        "date": "6/5/2023",
+        "logo": "./images/ico/logo.svg",
+        "links": [
+            {
+                "url": "https://example.com/link1",
+                "icon": "./images/ico/cake.svg"
+            },
+            {
+                "url": "https://example.com/link2",
+                "icon": "./images/ico/pulse.svg"
+            }
+        ]
+    },
+    {
+        "title": "Event title",
+        "date": "6/8/2023",
+        "logo": "./images/ico/logo.svg",
+        "links": [
+            {
+                "url": "https://example.com/link2",
+                "icon": "./images/ico/pulse.svg"
+            }
+        ]
+    },
+    {
+        "title": "Event title",
+        "date": "6/29/2023",
+        "links": [
+            {
+                "url": "https://example.com/link1",
+                "icon": "./images/ico/cake.svg"
+            }
+        ]
+    },
+    {
+        "title": "Event title",
+        "date": "6/21/2023",
+        "logo": "./images/ico/club-2.svg",
+        "links": [
+            {
+                "url": "https://example.com/link2",
+                "icon": "./images/ico/pulse.svg"
+            },
+            {
+                "url": "https://example.com/link1",
+                "icon": "./images/ico/cake.svg"
+            },
+            {
+                "url": "https://example.com/link1",
+                "icon": "./images/ico/clock.svg"
+            }
+        ]
+    },
+    {
+        "title": "Event title",
+        "date": "6/11/2023",
+        "logo": "./images/ico/club-2.svg",
+        "links": [
+            {
+                "url": "https://example.com/link2",
+                "icon": "./images/ico/pulse.svg"
+            },
+
+            {
+                "url": "https://example.com/link1",
+                "icon": "./images/ico/clock.svg"
+            }
+        ]
+    },
+    {
+        "title": "Event title",
+        "date": "6/17/2023",
+        "logo": "./images/ico/club-2.svg",
+        "links": []
+    },
+    {
+        "title": "Event title",
+        "date": "6/6/2023",
+        "logo": "./images/ico/club-2.svg",
+        "links": []
     }
 ]
