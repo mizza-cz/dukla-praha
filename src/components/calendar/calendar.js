@@ -82,9 +82,8 @@ function load() {
 
           for (let j = 0; j < eventForDay.links.length; j++) {
             const link = eventForDay.links[j];
-            const linkEl = document.createElement("a");
+            const linkEl = document.createElement("div");
             linkEl.classList.add("link");
-            linkEl.href = link.url;
 
             if (link.icon) {
               const iconImg = document.createElement("img");
@@ -92,6 +91,10 @@ function load() {
               iconImg.src = link.icon;
               linkEl.appendChild(iconImg);
             }
+
+            const linkContent = document.createElement("div");
+            linkContent.innerText = link.url;
+            linkEl.appendChild(linkContent);
 
             linksDiv.appendChild(linkEl);
           }
@@ -107,48 +110,29 @@ function load() {
 
     calendar.appendChild(daySquare);
   }
+
   var components = document.getElementsByClassName("day");
   for (var i = 0; i < components.length; i++) {
     var component = components[i];
-
     // Проверяем наличие элемента с классом "event" внутри компонента
     if (component.querySelector(".event")) {
-      // Добавляем класс "day-bg" к классу "day"
-      component.classList.add("day-bg");
+      // Создаем ссылку и заменяем компонент на ссылку
+      const link = document.createElement("a");
+      link.href = "#"; // Здесь нужно указать ссылку, на которую будет вести компонент
+      link.classList.add("day-bg");
+      link.innerHTML = component.innerHTML; // Копируем содержимое компонента в ссылку
+      component.parentNode.replaceChild(link, component);
+    }
+
+    // Проверяем наличие элемента с классом "link" внутри компонента
+    if (component.querySelector(".link")) {
+      // Заменяем класс "link" на "div"
+      const links = component.querySelectorAll(".link");
+      for (let j = 0; j < links.length; j++) {
+        const link = links[j];
+        link.classList.remove("link");
+        link.classList.add("div");
+      }
     }
   }
 }
-
-function initButtons() {
-  const nextButton = document.getElementById("nextButton");
-  const backButton = document.getElementById("backButton");
-
-  if (nextButton) {
-    nextButton.addEventListener("click", () => {
-      nav++;
-      load();
-    });
-  }
-
-  if (backButton) {
-    backButton.addEventListener("click", () => {
-      nav--;
-      load();
-    });
-  }
-}
-
-initButtons();
-// load();
-
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "data.json", true);
-xhr.onload = function () {
-  if (xhr.status === 200) {
-    const eventsFromJson = JSON.parse(xhr.response);
-    localStorage.setItem("events", JSON.stringify(eventsFromJson));
-    eventsList = eventsFromJson;
-    load();
-  }
-};
-xhr.send();
