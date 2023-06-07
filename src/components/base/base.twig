@@ -53,14 +53,6 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <!-- <script type="text/javascript">
-      var stripType = 10;
-      var stripGlExtraCode = 60;
-      var js = document.createElement("script");
-      js.src =
-        "https://gambrinusliga.s3-external-3.amazonaws.com/strip/strip-utf8.js";
-      document.getElementsByTagName("body")[0].appendChild(js);
-    </script> -->
     <div class="base">
       {% include "@components/header/header.twig" %}
       <main class="main" aria-label="Hlavní obsah">
@@ -69,6 +61,7 @@
 
       {% include "@components/footer/footer.twig" %}
     </div>
+
     <script
       defer
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -81,6 +74,15 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
     <script defer src="js/scripts.js"></script>
+    <script type="text/javascript">
+      var stripType = 8;
+      var stripGlExtraCode = 60;
+      var js = document.createElement("script");
+      js.src =
+        "https://gambrinusliga.s3-external-3.amazonaws.com/strip/strip-utf8.js";
+      document.getElementsByTagName("body")[0].appendChild(js);
+    </script>
   </body>
 </html>
