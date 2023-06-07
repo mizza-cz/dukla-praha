@@ -7,7 +7,6 @@ div#es-strip-container {
     left: 0px;
     z-index: 100000;
 }
-
 div.es-strip {
     color: #6c6c6c;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,12 +16,10 @@ div.es-strip {
     text-transform: uppercase;
     width: 100%;
 }
-
 div.es-strip img {
     border: none;
     display: block;
 }
-
 div.es-green {
     height: 40px;
     background: #1f6023;
@@ -104,7 +101,6 @@ div.es-dark {
     background-image: -webkit-linear-gradient(bottom, #1e1e1e 0%, #575757 100%);
     background-image: linear-gradient(bottom, #1e1e1e 0%, #575757 100%);
 }
-
 div.es-dark div.es-divider {
     background: #646464;
     border-left: 1px solid #636363;
@@ -112,7 +108,6 @@ div.es-dark div.es-divider {
     height: 100%;
     width: 1px;
 }
-
 div.es-dark a,
 div.es-dark a:visited {
     color: #868686;
@@ -122,11 +117,9 @@ div.es-dark a:visited {
     font-weight: bold;
     height: 40px;
 }
-
 div.es-dark a:hover {
     text-decoration: none;
 }
-
 div.es-with-menu div.es-menu-inner {
     width: 845px;
     margin: auto;
@@ -783,13 +776,11 @@ div#es-strip-26 div#es-chance-container {
 div#es-strip-26 div.es-menu-inner {
     width: 1180px;
 }
-
 div#es-strip-17 div#es-chance-container,
 div#es-strip-17 a#es-logo-lfa,
 div#es-strip-17 div#es-divider-101 {
     display: none;
 }
-
 div#es-strip-17 div.es-menu-inner {
     width: 83px;
 }
