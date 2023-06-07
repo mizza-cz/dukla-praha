@@ -793,41 +793,8 @@ div#es-strip-17 div#es-divider-101 {
 div#es-strip-17 div.es-menu-inner {
     width: 83px;
 }
-
 @media (max-width: 1200px) {
-    div.es-menu-kluby {
+    div#es-strip-container {
         display: none;
-    }
-}
-
-@media (max-width: 1070px) {
-    .es-logo-gl,
-    #es-divider-102 {
-        display: none;
-    }
-
-    div.es-dark.es-with-menu div.es-menu-inner,
-    div.es-light.es-with-menu div.es-menu-inner {
-        width: max-content;
-    }
-}
-
-@media (max-width: 799px) {
-    #es-chance-container {
-        display: none;
-    }
-}
-
-@media (max-width: 650px) {
-    .instagram,
-    .es-social-2015,
-    #es-divider-108 {
-        display: none !important;
-    }
-}
-
-@media (max-width: 420px) {
-    .es-chance {
-        display: none !important;
     }
 }
