@@ -107,6 +107,7 @@
   right: 0;
   line-height: 0;
   height: inherit;
+  width: 100%;
   .links {
     position: absolute;
     bottom: 12px;
@@ -137,6 +138,7 @@
     display: block;
     object-fit: contain;
     position: relative;
+    margin-left: auto;
   }
 }
 .padding {
@@ -193,4 +195,43 @@
 
 .day.day-bg {
   color: var(--color-green);
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.popup h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.popup .logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.popup .links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup .link {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.popup .link .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
