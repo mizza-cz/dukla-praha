@@ -16,7 +16,7 @@
   font-size: 32px;
   font-weight: 900;
   text-align: center;
-  line-height: 24px;
+  line-height: 125%;
   text-transform: capitalize;
   padding: 0 40px;
 }
@@ -68,7 +68,7 @@
   max-width: 14.28%;
   flex: 0 0 14.28%;
   padding: 12px 12px 12px 20px;
-  height: 7.1rem;
+  aspect-ratio: 60/40;
   box-sizing: border-box;
   background-color: white;
   box-shadow: 0px 0px 3px #cbd4c2;
@@ -86,10 +86,19 @@
   text-transform: uppercase;
   transition: var(--transition);
   position: relative;
+  @include media-breakpoint-only(lg) {
+    font-size: 32px;
+  }
   @include media-breakpoint-down(lg) {
     font-size: 24px;
     line-height: normal;
-    height: 80px;
+  }
+  @include media-breakpoint-down(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include media-breakpoint-down(md) {
   }
 }
 .day:hover {
@@ -108,17 +117,29 @@
   line-height: 0;
   height: inherit;
   width: 100%;
+  z-index: 9999;
+  height: 100%;
+  cursor: pointer;
+  @include media-breakpoint-down(md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .links {
     position: absolute;
     bottom: 12px;
     right: 24px;
     flex-wrap: nowrap;
     gap: 8px;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
   .link {
     display: block;
     width: 24px;
     height: auto;
+
     svg,
     img {
       width: 100%;
@@ -139,6 +160,9 @@
     object-fit: contain;
     position: relative;
     margin-left: auto;
+    @include media-breakpoint-down(xl) {
+      width: 32px;
+    }
   }
 }
 .padding {
@@ -195,6 +219,16 @@
 
 .day.day-bg {
   color: var(--color-green);
+  @include media-breakpoint-down(md) {
+    .logo {
+      // margin: 0;
+      // left: 0;
+      // right: 0;
+      // top: 0;
+      // bottom: 0;
+      display: none;
+    }
+  }
 }
 .popup {
   position: fixed;
@@ -210,12 +244,14 @@
 .popup h4 {
   font-size: 18px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 .popup .logo {
-  width: 100px;
+  width: 40px;
   height: auto;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 .popup .links {

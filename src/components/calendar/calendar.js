@@ -13,53 +13,8 @@ const weekdays = [
   "Saturday",
   "Sunday",
 ];
+
 function load() {
-  function openPopup(event) {
-    // Create the popup window element
-    const popup = document.createElement("div");
-    popup.classList.add("popup");
-
-    // Create the content for the popup window
-    const titleEl = document.createElement("h4");
-    titleEl.innerText = event.title;
-    popup.appendChild(titleEl);
-
-    if (event.logo) {
-      const logoImg = document.createElement("img");
-      logoImg.classList.add("logo");
-      logoImg.src = event.logo;
-      popup.appendChild(logoImg);
-    }
-
-    if (event.links) {
-      const linksDiv = document.createElement("div");
-      linksDiv.classList.add("links");
-      for (let j = 0; j < event.links.length; j++) {
-        const link = event.links[j];
-        const linkEl = document.createElement("div");
-        linkEl.classList.add("link");
-        if (link.icon) {
-          const iconImg = document.createElement("img");
-          iconImg.classList.add("icon");
-          iconImg.src = link.icon;
-          linkEl.appendChild(iconImg);
-        }
-        linksDiv.appendChild(linkEl);
-      }
-      popup.appendChild(linksDiv);
-    }
-
-    // Add the popup to the document body
-    document.body.appendChild(popup);
-
-    // Add an event listener to close the popup when clicked outside
-    popup.addEventListener("click", (e) => {
-      if (e.target === popup) {
-        popup.remove();
-      }
-    });
-  }
-
   const dt = new Date();
   if (nav !== 0) {
     dt.setMonth(new Date().getMonth() + nav);
@@ -124,12 +79,20 @@ function load() {
           eventDiv.appendChild(linksDiv);
         }
         daySquare.appendChild(eventDiv);
+
+        // Add event listener for popup
+        eventDiv.addEventListener("click", () => {
+          clicked = eventForDay;
+          openModal();
+        });
       }
     } else {
       daySquare.classList.add("padding");
     }
     calendar.appendChild(daySquare);
   }
+  // ...
+
   var components = document.getElementsByClassName("day");
   for (var i = 0; i < components.length; i++) {
     var component = components[i];
@@ -137,24 +100,94 @@ function load() {
       component.classList.add("day-bg");
     }
   }
+
+  // Add event listener for closing the modal on click outside the window
+  const modalBackDrop = document.getElementById("modalBackDrop");
+  if (modalBackDrop) {
+    modalBackDrop.addEventListener("click", () => {
+      closeModal();
+    });
+  }
 }
+
+// ...
+
+function openModal() {
+  const newEventModal = document.getElementById("newEventModal");
+  const modalBackDrop = document.getElementById("modalBackDrop");
+  if (newEventModal && modalBackDrop) {
+    newEventModal.style.display = "block";
+    modalBackDrop.style.display = "block";
+    populateModal();
+  }
+}
+
+function closeModal() {
+  const newEventModal = document.getElementById("newEventModal");
+  const modalBackDrop = document.getElementById("modalBackDrop");
+  if (newEventModal && modalBackDrop) {
+    newEventModal.style.display = "none";
+    modalBackDrop.style.display = "none";
+    clicked = null;
+  }
+}
+
+function populateModal() {
+  const eventTitleInput = document.getElementById("eventTitleInput");
+  if (eventTitleInput && clicked) {
+    eventTitleInput.value = clicked.title;
+  }
+}
+
 function initButtons() {
   const nextButton = document.getElementById("nextButton");
   const backButton = document.getElementById("backButton");
+  const saveButton = document.getElementById("saveButton");
+  const cancelButton = document.getElementById("cancelButton");
+  const closeButton = document.getElementById("closeButton");
+  const deleteButton = document.getElementById("deleteButton");
+
   if (nextButton) {
     nextButton.addEventListener("click", () => {
       nav++;
       load();
     });
   }
+
   if (backButton) {
     backButton.addEventListener("click", () => {
       nav--;
       load();
     });
   }
+
+  if (saveButton) {
+    saveButton.addEventListener("click", () => {
+      // Code to save the event
+    });
+  }
+
+  if (cancelButton) {
+    cancelButton.addEventListener("click", () => {
+      closeModal();
+    });
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
+      closeModal();
+    });
+  }
+
+  if (deleteButton) {
+    deleteButton.addEventListener("click", () => {
+      // Code to delete the event
+    });
+  }
 }
+
 initButtons();
+
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "data.json", true);
 xhr.onload = function () {
@@ -166,5 +199,3 @@ xhr.onload = function () {
   }
 };
 xhr.send();
-
- 
