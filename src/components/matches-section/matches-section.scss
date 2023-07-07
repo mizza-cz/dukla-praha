@@ -1,5 +1,13 @@
 .matches-section {
   margin-bottom: 100px;
+  .header-section__nav {
+    @include media-breakpoint-down(lg) {
+      order: 2;
+    }
+  }
+  .header-section__row {
+    width: 100%;
+  }
   @include media-breakpoint-down(xxl) {
     margin-bottom: 40px;
   }
@@ -60,7 +68,8 @@
     }
   }
   &__logo {
-    height: 48px;
+    width: 48px;
+    height: auto;
     img {
       width: 100%;
       height: 100%;

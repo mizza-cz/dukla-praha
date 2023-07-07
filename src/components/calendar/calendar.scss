@@ -271,3 +271,421 @@
   height: 20px;
   margin-right: 5px;
 }
+.article-body .match-logos span {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: #f2f4f8;
+}
+.article-body .match {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #121619;
+  margin: 0 0 32px;
+}
+.match-list-item {
+  font-family: "revolution-gothic", sans-serif;
+  border-bottom: 1px solid #121619;
+  padding-bottom: 16px;
+  margin: 16px 0;
+}
+.match-list-item .match-logos {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: left;
+}
+.match-list-item .match-logos span {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 40px;
+  background-color: #ddd;
+  margin-right: 8px;
+}
+.match-list-item .match-text {
+  text-align: left;
+  margin-left: 14px;
+}
+.match-list-item .match-text .match-info {
+  font-size: 12px;
+  padding: 4px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #878d96;
+  white-space: nowrap;
+}
+.match-list-item .match-text .match-team {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.match-list-item .match-score,
+.match-list-item .match-time {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 26px;
+  line-height: 1;
+}
+.match-list-item .match-score.win {
+  color: #c62332;
+}
+.match-list-item .match-score.loss {
+  color: #089d9a;
+}
+.match-list-item .match-score.draw {
+  color: #878d96;
+}
+
+.banner {
+  height: 208px;
+  background-color: rgba(77, 83, 88, 0.1);
+}
+.article-body,
+.standings-panel {
+  margin: 52px 0;
+}
+.article-body td,
+.article-body th,
+.standings-panel td,
+.standings-panel th {
+  padding: 0 10px;
+}
+.article-body td:first-child,
+.article-body th:first-child,
+.standings-panel td:first-child,
+.standings-panel th:first-child {
+  padding-left: 0;
+}
+.article-body td:last-child,
+.article-body th:last-child,
+.standings-panel td:last-child,
+.standings-panel th:last-child {
+  padding-right: 0;
+}
+.article-body thead th,
+.standings-panel thead th {
+  font-family: "Inter";
+  border-bottom: 2px solid #121619;
+  padding-top: 22px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.article-body tbody tr:first-child td,
+.standings-panel tbody tr:first-child td {
+  padding-top: 8px;
+}
+.article-body th,
+.standings-panel th {
+  font-size: 12px;
+}
+.article-body td,
+.standings-panel td {
+  font-size: 14px;
+}
+.standings-panel .hb,
+.standings .hb {
+  font-weight: 700;
+}
+.standings-panel table {
+  margin: 0 16px;
+}
+.article-body table {
+  width: 100%;
+}
+.article-body tbody td {
+  border-bottom: 1px solid rgba(18, 22, 25, 0.25);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.article-header {
+  position: relative;
+  margin: 32px 0;
+}
+.article-header img {
+  max-width: 100%;
+}
+.article-header .article-overlay {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  padding-top: 200px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(18, 22, 25, 0) 0,
+    rgba(18, 22, 25, 0.9)
+  );
+}
+.article-header .article-overlay .h1,
+.article-header .article-overlay h1 {
+  font-size: 40px;
+  margin: 10px 32px;
+  z-index: 1;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  position: relative;
+}
+.article-header .article-overlay .article-info {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 8px;
+  color: #121619;
+  background-color: #f6f6f7;
+  margin-bottom: 32px;
+}
+.article-header .article-overlay:after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    180deg,
+    rgba(18, 22, 25, 0) 0,
+    rgba(18, 22, 25, 0.9)
+  );
+  margin-top: -300px;
+  height: 300px;
+  width: 100%;
+  content: "";
+  z-index: 0;
+}
+.article-body {
+  margin: 0 56px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.article-body .h2,
+.article-body h2 {
+  font-family: "revolution-gothic", sans-serif;
+}
+.article-body .article-intro {
+  font-weight: 700;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #121619;
+  margin-bottom: 32px;
+}
+.articles-side img {
+  max-width: 40%;
+}
+.articles-side .h3,
+.articles-side h3 {
+  font-size: 20px;
+}
+.lineup .lineup-section {
+  margin: 33px 0;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #121619;
+}
+.lineup .lineup-section:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.lineup .lineup-item {
+  margin: 20px 0;
+  min-width: 50%;
+  position: relative;
+}
+@media (max-width: 640px) {
+  .lineup .lineup-item {
+    margin: 10px 0;
+  }
+}
+.lineup .lineup-item img {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  border-radius: 40px;
+  float: left;
+  margin-right: 16px;
+  object-fit: cover;
+  object-position: top;
+}
+.lineup .lineup-item .number {
+  display: none;
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  z-index: 1;
+  color: #fff;
+  background: rgba(#00337a, 0.75);
+  border-radius: 40px;
+}
+.lineup .lineup-item .lineup-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.lineup .lineup-item .lineup-role {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #878d96;
+}
+.lineup .lineup-item:hover .number {
+  display: block;
+}
+.lineup .lineup-item:hover .lineup-name {
+  text-decoration: underline;
+}
+.lineup-links {
+  margin: 80px 0;
+}
+.player-info .image {
+  margin-top: 36px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.player-info .image img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.player-info .image .player-overlay {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(18, 22, 25, 0) 0,
+    rgba(18, 22, 25, 0.9)
+  );
+  position: absolute;
+  bottom: 0;
+  height: 160px;
+}
+.player-info .image .player-overlay .number {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 60px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  border-radius: 40px;
+  margin: 0 auto;
+  position: relative;
+  top: -58px;
+}
+.player-info .image .player-overlay .h1,
+.player-info .image .player-overlay h1 {
+  color: #fff;
+  margin: 8px;
+  position: relative;
+  top: 90px;
+}
+.player-roster .h4,
+.player-roster h4 {
+  margin-top: 12px;
+}
+.player-roster a {
+  text-decoration: none;
+}
+.player-roster a:hover {
+  text-decoration: underline;
+}
+.player-roster a span {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.player-roster .number {
+  display: inline-block;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  margin-right: 6px;
+}
+.sponsors {
+  margin-top: 64px;
+  box-shadow: 0 -2px 24px 0 rgba(18, 22, 25, 0.15),
+    0 -2px 2px 0 rgba(18, 22, 25, 0.05);
+}
+.sponsors a {
+  display: inline-block;
+  margin: 32px;
+}
+.footer {
+  padding: 32px 0;
+  color: #fff;
+  background: #004b8d;
+  text-align: center;
+}
+.footer .logo {
+  margin-bottom: 32px;
+}
+.footer a,
+.footer a:hover,
+.footer a:visited {
+  color: #fff;
+}
+.footer .nav-links {
+  margin: 16px 0;
+}
+.footer .nav-links a {
+  margin: 0 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer .social {
+  margin: 16px 0;
+}
+.footer .social a {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.footer .social a img {
+  vertical-align: middle;
+  margin: 8px;
+  max-width: 16px;
+}
+.footer .copyright {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.container a:hover,
+.topstory-item-detail h3:hover {
+  text-decoration: underline !important;
+}
+.article p,
+.news-item p,
+.button,
+.article-info,
+.lineup-links,
+.season-links {
+  font-family: "Inter";
+}
+.lineup-links div,
+.season-links div {
+  margin: 4px 16px;
+}
+.lineup-links div:not(:last-child),
+.season-links div:not(:last-child) {
+  border-bottom: black 1px solid;
+  padding-bottom: 4px;
+}
+.container .gx-5 .col-lg-8 p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
