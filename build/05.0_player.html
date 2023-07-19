@@ -1208,14 +1208,29 @@
 	<script defer src="js/lightgallery.min.js"></script>
 	<script defer src="js/scripts.js"></script>
 	<script defer src="js/lightgallery.umd.js"></script>
-	<!-- <script type="text/javascript">
-      var stripType = 8;
-      var stripGlExtraCode = 60;
-      var js = document.createElement("script");
-      js.src =
-        "https://gambrinusliga.s3-external-3.amazonaws.com/strip/strip-utf8.js";
-      document.getElementsByTagName("body")[0].appendChild(js);
-    </script> -->
+	<script type="text/javascript">
+		var stripType = 8;
+		var stripGlExtraCode = 60;
+		var js = document.createElement("script");
+		js.src =
+			"https://gambrinusliga.s3-external-3.amazonaws.com/strip/strip-utf8.js";
+		document.getElementsByTagName("body")[0].appendChild(js);
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var listItems = document.querySelectorAll(".list-item");
+			listItems.forEach(function(item) {
+				var ulElement = item.querySelector(".dynamic-list");
+				var listCount = parseInt(
+					item.querySelector(".list-count").textContent
+				);
+				for (var i = 0; i < listCount; i++) {
+					ulElement.innerHTML += "<li></li>";
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

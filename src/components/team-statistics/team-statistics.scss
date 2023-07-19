@@ -1,0 +1,141 @@
+.team-statistics {
+  &__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    @include media-breakpoint-down(xl) {
+      max-width: 640px;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    padding-top: 72px;
+    margin-bottom: 97px;
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+  }
+  &__point.big {
+    font-size: 20px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      order: -1;
+    }
+    span {
+      background-color: var(--color-yellow);
+      border-radius: 8px;
+      height: 190px;
+      min-width: 220px;
+      font-size: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      @include media-breakpoint-down(lg) {
+        width: fit-content;
+        margin: 0 auto 24px;
+      }
+    }
+  }
+  &__point {
+    opacity: 1;
+    color: rgba(0, 17, 15, 1);
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 24px;
+    span {
+      display: block;
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 60px;
+      margin-bottom: 26px;
+    }
+  }
+}
+//// balance
+///
+.list-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+  @include media-breakpoint-down(xl) {
+    justify-content: flex-start;
+  }
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+}
+
+.list-container__main {
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+  }
+}
+.list__inner {
+  display: flex;
+
+  flex-wrap: nowrap !important;
+  margin-left: -32px;
+  margin-right: -32px;
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+  }
+}
+.list__col {
+  padding: 0 32px;
+}
+.list-info {
+  display: flex;
+  align-items: center;
+  color: rgba(131, 139, 155, 1);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 18px;
+  margin-top: 16px;
+  span {
+    text-transform: uppercase;
+  }
+}
+.list-count {
+  margin-right: 4px;
+}
+.dynamic-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+.list-item {
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 16px;
+  }
+}
+.dynamic-list.green li {
+  background-color: #289869;
+}
+.dynamic-list.orange li {
+  background-color: #ea8226;
+}
+.dynamic-list.gray li {
+  background-color: #dde0e6;
+}
+.dynamic-list.red li {
+  background-color: var(--color-red);
+}
+.dynamic-list li {
+  width: 24px;
+  height: 48px;
+  border-radius: 6px;
+  padding: 0;
+  margin-right: 12px;
+  @include media-breakpoint-down(md) {
+    margin-right: 8px;
+  }
+}
