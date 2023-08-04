@@ -6,8 +6,14 @@
   .slick-slide > div {
     height: 100%;
   }
+
+  // .slick-track {
+  //   display: flex;
+  //   justify-content: center;
+  // }
   &__inner {
     display: flex;
+    justify-content: center;
     @media (max-width: 1670px) {
       padding: 0 64px;
     }
