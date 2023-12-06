@@ -58,7 +58,19 @@
     @include media-breakpoint-down(sm) {
       padding: 0;
     }
-    @media (min-width: 542px) {
+    @include media-breakpoint-only(xl) {
+      max-width: 1000px;
+      padding: 0 72px;
+    }
+    @include media-breakpoint-only(lg) {
+      max-width: 1000px;
+      padding: 0 72px;
+    }
+    @include media-breakpoint-only(md) {
+      max-width: 1000px;
+      padding: 0 72px;
+    }
+    @include media-breakpoint-only(sm) {
       max-width: 1000px;
       padding: 0 72px;
     }
