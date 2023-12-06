@@ -1,6 +1,6 @@
 $(".scoreboard__inner").slick({
-  slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   prevArrow:
     '<button class="shop-slider__btn shop-slider__btnprev"><img src="images/ico/slider.svg" loading="lazy" alt="" /></button> ',
   nextArrow:
@@ -8,17 +8,12 @@ $(".scoreboard__inner").slick({
   responsive: [
     {
       breakpoint: 1313,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
+      settings: {},
     },
     {
       breakpoint: 541,
       settings: {
         arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
       },

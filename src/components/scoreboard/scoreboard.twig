@@ -1,231 +1,244 @@
 <section class="scoreboard">
   <div class="container">
-    <div class="scoreboard__inner">
-      <div class="scoreboard__item bg-yellow">
-        <div class="scoreboard__header">
-          <h3 class=" ">ODEHRANÝ ZÁPAS</h3>
-        </div>
-        <div class="scoreboard__col">
-          <div class="row gx-5">
-            <div class="col-md-3">
-              <div class="scoreboard__img">
-                <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
-              </div>
+    <div class="row g-0">
+      <div class="col-xl-6">
+        <div class="scoreboard__inner">
+          <div class="scoreboard__item bg-yellow">
+            <div class="scoreboard__header">
+              <h3 class=" ">ODEHRANÝ ZÁPAS</h3>
             </div>
-            <div class="col-md-9">
-              <div class="row align-items-center">
-                <div class="col-md-8">
-                  <div class="scoreboard__info">
-                    <div class="scoreboard__place">
-                      19. KOLO, FORTUNA:NÁRODNÍ LIGA
-                    </div>
-                    <h4 class="h4">MFK Vyškov</h4>
-                    <h4 class="h4">FK Dukla Praha</h4>
+            <div class="scoreboard__col">
+              <div class="row gx-5">
+                <div class="col-md-3">
+                  <div class="scoreboard__img">
+                    <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="scoreboard__number win">0:5</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <ul class="links">
-                <li>
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#matchModal"
-                    class="tag tag-red"
-                  >
-                    report
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="tag tag-red">galerie</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="scoreboard__item bg-red">
-        <div class="scoreboard__header">
-          <h3 class="text-white">do výkopu zbývá</h3>
-          {% include "@components/timer/timer.twig" %}
-        </div>
-        <div class="scoreboard__col">
-          <div class="row gx-5">
-            <div class="col-md-3">
-              <div class="scoreboard__img">
-                <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="row align-items-center">
-                <div class="col-md-8">
-                  <div class="scoreboard__info">
-                    <div class="scoreboard__place">
-                      19. KOLO, FORTUNA:NÁRODNÍ LIGA
+                <div class="col-md-9">
+                  <div class="row align-items-center">
+                    <div class="col-md-8">
+                      <div class="scoreboard__info">
+                        <div class="scoreboard__place">
+                          19. KOLO, FORTUNA:NÁRODNÍ LIGA
+                        </div>
+                        <h4 class="h4">MFK Vyškov</h4>
+                        <h4 class="h4">FK Dukla Praha</h4>
+                      </div>
                     </div>
-                    <h4 class="h4">FK Dukla Praha</h4>
-                    <h4 class="h4">SK Slavia Praha B</h4>
+                    <div class="col-md-4">
+                      <div class="scoreboard__number win">0:5</div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="scoreboard__number">so 15. 4. 16:30</div>
+                <div class="col-12">
+                  <ul class="links">
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchModal"
+                        class="tag tag-red"
+                      >
+                        report
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-red">galerie</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-12">
-              <ul class="links">
-                <li>
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#matchModal"
-                    class="tag tag-gold"
-                  >
-                    Preview
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="tag tag-gold"> Vstupenky</a>
-                </li>
-                <li>
-                  <a href="#" class="tag tag-green">Onlajn</a>
-                </li>
-                <li>
-                  <a href="#" class="tag tag-green">Stream</a>
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="scoreboard__item bg-yellow">
-        <div class="scoreboard__header">
-          <h3 class=" ">ODEHRANÝ ZÁPAS</h3>
-        </div>
-        <div class="scoreboard__col">
-          <div class="row gx-5">
-            <div class="col-md-3">
-              <div class="scoreboard__img">
-                <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="row align-items-center">
-                <div class="col-md-8">
-                  <div class="scoreboard__info">
-                    <div class="scoreboard__place">
-                      19. KOLO, FORTUNA:NÁRODNÍ LIGA
-                    </div>
-                    <h4 class="h4">MFK Vyškov</h4>
-                    <h4 class="h4">FK Dukla Praha</h4>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="scoreboard__number win">0:5</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <ul class="links">
-                <li>
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#matchModal"
-                    class="tag tag-red"
-                  >
-                    report
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="tag tag-red">galerie</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="scoreboard__item bg-red">
-        <div class="scoreboard__header">
-          <h3 class="text-white">do výkopu zbývá</h3>
-          <div
-            id="timer-wrapper-2"
-            class="timer"
-            role="timer"
-            aria-label="A timer, counting down to {{ eventName }}"
-            data-endtime="2024-01-30T02:00"
-          >
-            <span class="timer__item" id="timer-days-2">
-              <span
-                class="timer__label timer__label-days"
-                id="countdown-days-label-2"
-                >d</span
-              >
-              <span class="timer__value" id="countdown-days-2">{{ days }}</span>
-            </span>
-            <span class="timer__item" id="timer-hours-2">
-              <span class="timer__label" id="countdown-hours-label-2">hod</span>
-              <span class="timer__value" id="countdown-hours-2">{{
-                hours
-              }}</span>
-            </span>
-            <span class="timer__item" id="timer-minutes-2">
-              <span class="timer__label" id="countdown-minutes-label-2"
-                >min</span
-              >
-              <span class="timer__value" id="countdown-minutes-2">{{
-                minutes
-              }}</span>
-            </span>
-          </div>
-        </div>
-        <div class="scoreboard__col">
-          <div class="row gx-5">
-            <div class="col-md-3">
-              <div class="scoreboard__img">
-                <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="row align-items-center">
-                <div class="col-md-8">
-                  <div class="scoreboard__info">
-                    <div class="scoreboard__place">
-                      19. KOLO, FORTUNA:NÁRODNÍ LIGA
-                    </div>
-                    <h4 class="h4">FK Dukla Praha</h4>
-                    <h4 class="h4">SK Slavia Praha B</h4>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="scoreboard__number">so 15. 4. 16:30</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <ul class="links">
-                <li>
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#matchModal"
-                    class="tag tag-gold"
-                  >
-                    Preview
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="tag tag-gold"> Vstupenky</a>
-                </li>
 
-                <li>
-                  <a href="#" class="tag tag-green">Stream</a>
-                </li>
-              </ul>
+          <div class="scoreboard__item bg-yellow">
+            <div class="scoreboard__header">
+              <h3 class=" ">ODEHRANÝ ZÁPAS</h3>
+            </div>
+            <div class="scoreboard__col">
+              <div class="row gx-5">
+                <div class="col-md-3">
+                  <div class="scoreboard__img">
+                    <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="row align-items-center">
+                    <div class="col-md-8">
+                      <div class="scoreboard__info">
+                        <div class="scoreboard__place">
+                          19. KOLO, FORTUNA:NÁRODNÍ LIGA
+                        </div>
+                        <h4 class="h4">MFK Vyškov</h4>
+                        <h4 class="h4">FK Dukla Praha</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="scoreboard__number win">0:5</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <ul class="links">
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchModal"
+                        class="tag tag-red"
+                      >
+                        report
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-red">galerie</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="scoreboard__inner">
+          <div class="scoreboard__item bg-red">
+            <div class="scoreboard__header">
+              <h3 class="text-white">do výkopu zbývá</h3>
+              <div
+                id="timer-wrapper-2"
+                class="timer"
+                role="timer"
+                aria-label="A timer, counting down to {{ eventName }}"
+                data-endtime="2024-01-30T02:00"
+              >
+                <span class="timer__item" id="timer-days-2">
+                  <span
+                    class="timer__label timer__label-days"
+                    id="countdown-days-label-2"
+                    >d</span
+                  >
+                  <span class="timer__value" id="countdown-days-2">{{
+                    days
+                  }}</span>
+                </span>
+                <span class="timer__item" id="timer-hours-2">
+                  <span class="timer__label" id="countdown-hours-label-2"
+                    >hod</span
+                  >
+                  <span class="timer__value" id="countdown-hours-2">{{
+                    hours
+                  }}</span>
+                </span>
+                <span class="timer__item" id="timer-minutes-2">
+                  <span class="timer__label" id="countdown-minutes-label-2"
+                    >min</span
+                  >
+                  <span class="timer__value" id="countdown-minutes-2">{{
+                    minutes
+                  }}</span>
+                </span>
+              </div>
+            </div>
+            <div class="scoreboard__col">
+              <div class="row gx-5">
+                <div class="col-md-3">
+                  <div class="scoreboard__img">
+                    <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="row align-items-center">
+                    <div class="col-md-8">
+                      <div class="scoreboard__info">
+                        <div class="scoreboard__place">
+                          19. KOLO, FORTUNA:NÁRODNÍ LIGA
+                        </div>
+                        <h4 class="h4">FK Dukla Praha</h4>
+                        <h4 class="h4">SK Slavia Praha B</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="scoreboard__number">so 15. 4. 16:30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <ul class="links">
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchModal"
+                        class="tag tag-gold"
+                      >
+                        Preview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-gold"> Vstupenky</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="tag tag-green">Stream</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scoreboard__item bg-red">
+            <div class="scoreboard__header">
+              <h3 class="text-white">do výkopu zbývá</h3>
+              {% include "@components/timer/timer.twig" %}
+            </div>
+            <div class="scoreboard__col">
+              <div class="row gx-5">
+                <div class="col-md-3">
+                  <div class="scoreboard__img">
+                    <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="row align-items-center">
+                    <div class="col-md-8">
+                      <div class="scoreboard__info">
+                        <div class="scoreboard__place">
+                          19. KOLO, FORTUNA:NÁRODNÍ LIGA
+                        </div>
+                        <h4 class="h4">FK Dukla Praha</h4>
+                        <h4 class="h4">SK Slavia Praha B</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="scoreboard__number">so 15. 4. 16:30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <ul class="links">
+                    <li>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchModal"
+                        class="tag tag-gold"
+                      >
+                        Preview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-gold"> Vstupenky</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-green">Onlajn</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-green">Stream</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
