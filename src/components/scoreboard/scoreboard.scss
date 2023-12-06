@@ -1,5 +1,24 @@
 .scoreboard {
   margin-bottom: 70px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  .shop-slider__btnprev {
+    left: -4.5rem;
+    @include media-breakpoint-down(xxl) {
+      left: 0;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .shop-slider__btnnext {
+    right: -4.5rem;
+    @include media-breakpoint-down(xxl) {
+      right: 0;
+      width: 60px;
+      height: 60px;
+    }
+  }
   .links {
     justify-content: center;
   }
@@ -31,14 +50,17 @@
   }
   &__inner {
     border-radius: 8px;
-    overflow: hidden;
-    @include media-breakpoint-down(xl) {
-      flex-direction: column;
-
-      margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-down(sm) {
+      padding: 0;
     }
-    @include media-breakpoint-only(lg) {
-      max-width: 80%;
+    @media (min-width: 542px) {
+      max-width: 1000px;
+      padding: 0 72px;
     }
   }
   &__header {

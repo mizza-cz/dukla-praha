@@ -1,24 +1,84 @@
 <div
-  id="js-timer"
+  id="timer-wrapper-1"
   class="timer"
   role="timer"
   aria-label="A timer, counting down to {{ eventName }}"
-  data-endtime="2023-07-30T02:00"
+  data-endtime="2024-02-30T02:00"
 >
-  <span class="timer__item" id="timer-days">
-    <span class="timer__label timer__label-days">d</span>
-    <span class="timer__value">{{ days }}</span>
+  <span class="timer__item" id="timer-days-1">
+    <span class="timer__label timer__label-days" id="countdown-days-label-1"
+      >d</span
+    >
+    <span class="timer__value" id="countdown-days-1">{{ days }}</span>
   </span>
-  <span class="timer__item" id="timer-hours">
-    <span class="timer__label">hod</span>
-    <span class="timer__value">{{ hours }}</span>
+  <span class="timer__item" id="timer-hours-1">
+    <span class="timer__label" id="countdown-hours-label-1">hod</span>
+    <span class="timer__value" id="countdown-hours-1">{{ hours }}</span>
   </span>
-  <span class="timer__item" id="timer-minutes">
-    <span class="timer__label">min</span>
-    <span class="timer__value">{{ minutes }}</span>
-  </span>
-  <span class="timer__item" id="timer-seconds">
-    <span class="timer__value h1">{{ seconds }}</span>
-    <span class="timer__label">vteřiny</span>
+  <span class="timer__item" id="timer-minutes-1">
+    <span class="timer__label" id="countdown-minutes-label-1">min</span>
+    <span class="timer__value" id="countdown-minutes-1">{{ minutes }}</span>
   </span>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let countItems = document.querySelectorAll(".timer");
+
+    if (countItems) {
+      countItems.forEach(function (countItem, index) {
+        initializeTimer(countItem, index + 1);
+      });
+    }
+
+    function initializeTimer(countItem, timerIndex) {
+      let daysElement = document.getElementById(`countdown-days-${timerIndex}`);
+      let hoursElement = document.getElementById(
+        `countdown-hours-${timerIndex}`
+      );
+      let minutesElement = document.getElementById(
+        `countdown-minutes-${timerIndex}`
+      );
+      let secondsElement = document.getElementById(
+        `countdown-seconds-${timerIndex}`
+      );
+
+      let daysLabelElement = document.getElementById(
+        `countdown-days-label-${timerIndex}`
+      );
+      let hoursLabelElement = document.getElementById(
+        `countdown-hours-label-${timerIndex}`
+      );
+      let minutesLabelElement = document.getElementById(
+        `countdown-minutes-label-${timerIndex}`
+      );
+
+      let deadline = new Date(countItem.dataset.endtime).getTime();
+      let timerInterval;
+
+      function updateTimer() {
+        let currentTime = new Date().getTime();
+        let timeDifference = deadline - currentTime;
+
+        if (timeDifference <= 0) {
+          countItem.innerHTML = `<b class="py-3 text-uppercase" style="grid-column: span 4">Událost již začala</b>`;
+          clearInterval(timerInterval);
+        } else {
+          let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+          let hours = Math.floor(
+            (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          let minutes = Math.floor(
+            (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          let seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+          daysElement.innerHTML = days;
+          hoursElement.innerHTML = hours;
+          minutesElement.innerHTML = minutes;
+        }
+      }
+
+      timerInterval = setInterval(updateTimer, 1000);
+    }
+  });
+</script>
