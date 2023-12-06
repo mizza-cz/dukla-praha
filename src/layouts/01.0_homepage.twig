@@ -4,6 +4,155 @@ block main %} {% include "@components/article/article.twig" %} {% include
 "@components/topstory-section/topstory-section.twig" %} {% include
 "@components/shop-slider/shop-slider.twig" %} {% include
 "@components/scoreboard/scoreboard.twig" %}
-{% include "@components/calendar/calendar.twig" %}
+<div class="calendarBox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        {% include "@components/calendar/calendar.twig" %}
+      </div>
+      <div class="col-lg-3">
+        <section class="table-section mt-5">
+          <h3 class="h2 mb-10">Tabulka</h3>
+          <div class="table-section__content">
+            <div class="o-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Tým</th>
+                    <th>B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+
+                  <tr class="dukla">
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/logo.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      DUK
+                    </td>
+                    <td>77</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <img
+                        src="images/ico/club-2.svg"
+                        loading="lazy"
+                        alt="logo"
+                      />
+                      FSB
+                    </td>
+                    <td>13</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
 {% include "@components/hp-statistics/hp-statistics.twig" %} {% include
 "@components/socialFeed/socialFeed.twig" %} {% endblock %}

@@ -178,6 +178,7 @@
 }
 .nav-item {
   padding: 0 0.825rem;
+  list-style: none;
 }
 .dropdown {
   &-toggle {
@@ -217,6 +218,7 @@
     @include media-breakpoint-down(xl) {
       text-align: center;
       position: static;
+      flex-direction: column;
       box-shadow: none;
       transform: none;
       border-left: none;
@@ -424,4 +426,17 @@
 // form
 .header__form {
   display: none;
+}
+.dropdown-menu.show.dropdown-menu {
+  position: relative;
+  padding: 0;
+  padding-top: 12px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+
+  .dropdown-item {
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
 }
