@@ -1,0 +1,22 @@
+.trainers-section {
+  &__inner {
+    .table-responsive table td {
+      background-color: var(--color-light) !important;
+    }
+    tr {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    td {
+      max-width: 33.333%;
+      flex: 0 0 33.333%;
+      background: var(--color-light) !important;
+      img {
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
