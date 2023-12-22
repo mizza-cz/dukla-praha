@@ -1,0 +1,63 @@
+.registration-section {
+  &__menu {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f7f8f9 !important;
+    text-align: center;
+    p {
+      font-size: 18px;
+    }
+    a {
+      display: block;
+      color: var(--color-red);
+      font-weight: 700;
+      margin-top: 8px;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+}
+
+.registration {
+  .header-section__label {
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+  }
+  button {
+    cursor: pointer;
+  }
+  input {
+    padding: 0.0625rem 2.375rem 0.125rem 1.5rem;
+    border: 0.0625rem solid var(--color-red);
+    height: 44px;
+    display: block;
+    border-radius: 0.25rem;
+    background-color: #f7f8f9;
+    width: 100%;
+  }
+}
+.c-forum__agreement {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  label {
+    padding: 0;
+    margin: 0;
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    accent-color: var(--color-red);
+    height: 20px;
+    margin-right: 12px;
+  }
+  strong {
+    margin-right: 6px;
+  }
+}

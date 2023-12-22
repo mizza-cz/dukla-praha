@@ -1,0 +1,52 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"17.0_registration-editor" %} {% block main %}
+
+<section class="registration-section pb-10 mb-md-10">
+  <div class="container">
+    <div class="header-section mb-10 px-md-2 px-1">
+      <h1 class="h1">PŘIHLÁŠENÍ</h1>
+    </div>
+
+    <div class="row g-10">
+      <div class="col-xl-9">
+        <div class="o-content px-md-2 px-1">
+          <p>
+            Pro úpravu registrace se musíte nejprve přihlásit. Zadejte Vaše
+            uživatelské jméno a heslo, které jste zadali při registraci.
+          </p>
+          <div class="registration">
+            <form action="">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label class="header-section__label">
+                    <div class="header-section__category">
+                      Uživatelské jméno: *
+                    </div>
+                    <input type="text" required name="username" />
+                  </label>
+                </div>
+                <div class="col-sm-6">
+                  <label class="header-section__label">
+                    <div class="header-section__category">Heslo: *</div>
+                    <input type="password" required name="password" />
+                  </label>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="tag tag-red">
+                    <strong>Odeslat</strong>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 d-none d-xl-block">
+        {% include "@components/aside/aside.twig" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

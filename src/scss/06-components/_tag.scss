@@ -3,9 +3,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;
-  a:hover {
-    text-decoration: underline;
-  }
+
   li:first-child a {
     border-radius: 8px 0px 0 8px;
   }
@@ -26,6 +24,9 @@
   outline: none;
   border: none;
   display: block;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .tag-gold {
   color: var(--color-red);
