@@ -1,0 +1,136 @@
+.modalForum {
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+  .tag {
+    cursor: pointer;
+  }
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 0.0625rem solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 0.0625rem);
+    border-bottom-left-radius: calc(0.3rem - 0.0625rem);
+  }
+  .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top-left-radius: calc(0.3rem - 0.0625rem);
+    border-top-right-radius: calc(0.3rem - 0.0625rem);
+    position: relative;
+    left: 0;
+    padding-bottom: 0;
+    right: 0;
+
+    width: 100%;
+    h2 {
+      color: var(--color-red);
+    }
+  }
+  .modal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    textarea {
+      display: block;
+      width: 100%;
+      resize: vertical;
+      max-height: 11rem;
+      border: 0.0625rem solid var(--color-dark);
+      margin-bottom: 16px;
+      padding: 12px 16px;
+      border-radius: 4px;
+    }
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+  }
+  .c-forum__reaction {
+    margin-bottom: 8px;
+  }
+
+  .c-forum__box {
+    label {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin-top: 2px;
+      font-weight: 400;
+      border-radius: 4px;
+    }
+  }
+}
+.c-forum-section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  button {
+    //  color: var(--color-red);
+    text-decoration-color: inherit;
+    cursor: pointer;
+  }
+}
+
+.c-forum__row {
+  display: flex;
+  padding: 2rem;
+  background-color: #f7f8f9;
+  @include media-breakpoint-down(md) {
+  }
+}
+
+.c-forum__row-left__col {
+  padding-right: 1rem;
+  border-right: 0.0625rem solid rgba(0, 0, 0, 0.1);
+  img {
+    width: 60px;
+    object-fit: contain;
+  }
+}
+
+.c-forum__row-right__col {
+  padding-left: 1rem;
+}
+
+.c-forum__row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+// form
+#smiles {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
