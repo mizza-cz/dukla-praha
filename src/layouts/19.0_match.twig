@@ -1,0 +1,150 @@
+{% extends "@components/base/base.twig" %} {% set title = "13.0_article" %} {%
+block main %}
+
+<section class="articleSection">
+  <div class="container">
+    <article class="article">
+      <div class="article__img">
+        <img src="images/content/2.jpeg" loading="lazy" alt="clanek-1" />
+        <div class="article__img-info">
+          <ul class="tags">
+            <li>
+              <a href="#" class="tag tag-gold">preview</a>
+            </li>
+            <li>
+              <a href="#" class="tag tag-white">dnes</a>
+            </li>
+          </ul>
+          <h1 class="h1">Generálka: Po dvou gólech v druhé půli remíza</h1>
+        </div>
+      </div>
+      {% include "@components/article-match/article-match.twig" %}
+      <div class="article-content">
+        <div class="row">
+          <div class="col-xxl-9 col-xl-10 col-11 mx-auto">
+            <div class="perex">
+              V 19. kole FORTUNA:NÁRODNÍ LIGY bylo k vidění derby pražských
+              týmu, na Julisce se představila Slavia Praha B. Bleskový start do
+              zápasu započal gólovou trefou Kozel, na jehož zásah navázali Krch
+              a v druhém poločase také Matějka s Moulisem. Dukla nakonec
+              porazila červenobílé 4:1.
+            </div>
+            <div class="article__comment">
+              <h2 class="p1 mb-5">Komentář</h2>
+              <p>
+                Dukla začala utkání velmi aktivní hrou, kterou po pár minutách
+                hry poprvé zužitkovala. V sedmé minutě Špatenka rychle rozehrál
+                volný kop z poloviny hřiště na Moulise, který ve vápně posunul
+                na Barace. Krajní hráč adresoval zpětnou přihrávku přesně do
+                středu vápna, kde stál připravený David Kozel, jehož střela
+                zapadla ke vzdálenější tyči Dvořáka.
+              </p>
+              <p>
+                O čtyři minuty později podržel domácí fotbalisty skvělým
+                zákrokem Filip Rada. Hostující Daniel Šmiga si naskočil na
+                povedený centr svého spoluhráče, ale devětatřicetiletého
+                brankáře Radu nepřekonal. Podruhé se tak ke slovu dostali
+                domácí.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <img
+                    src="images/content/2.jpeg"
+                    loading="lazy"
+                    alt="clanek-1"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <p>
+                    V jednadvacáté minutě nasměroval tým z Julisky centr do
+                    vápna, který vypadl z náruče sešívaného brankáře. V
+                    následném zmatku před brankou se nejlépe zorientoval Daniel
+                    Krch, který si připsal svojí první branku v žlutočervených
+                    barvách a zvýšil na 2:0.
+                  </p>
+                  <p>
+                    V gólově bohatém prvním poločase se přesného zásahu po více
+                    než půl hodině hry dočkali také sešívaní. Z protiútoku
+                    Slavie, po několika odrazech na úrovni vápna, propadl míč k
+                    osamocenému Adamu Pudilovi. Mladý slávistický záložník tváři
+                    v tvář proti Radovi uspěl.
+                  </p>
+                </div>
+              </div>
+              <p>
+                Druhý poločas nabídl množství osobních soubojů na obou stranách,
+                i přesto se Dukla v 66. minutě vrátila do dvoubrankového vedení.
+                Po několika vyložených šancích vyslal Moulis z pravé strany
+                Lukáše Matějku, který vystřelil z velkého úhlu. Razantní střelou
+                se mu ale podařilo prostřelit hostujícího golmana.
+              </p>
+            </div>
+            <div class="o-content">
+              <h5>Hlavní body vítězství:</h5>
+              <ul>
+                <li>Jsem nesmírně hrdý na tuto skupinu hráčů.</li>
+                <li>
+                  Hráli jsme skvěle a ukázali jsme, co jsme schopni dokázat.
+                </li>
+                <li>
+                  Dnes jsme se stali vítězi a já věřím, že toto vítězství nás
+                  ještě více posílí na další zápasy.
+                </li>
+                <li>Byla to skvělá práce celého týmu.</li>
+                <li>
+                  Od obrany až po útok jsme hráli jako jeden celek a ukázali
+                  jsme, že jsme velmi nebezpečným soupeřem.
+                </li>
+              </ul>
+              <div class="p1 mb-6">V pozápasovém rozhovoru zaznělo:</div>
+              <q>
+                <p>
+                  Další utkání nás čeká 1. dubna, kdy se představíme na hřišti
+                  Vyškova.
+                </p>
+                <p>Plánovaný start je v 10:15.</p>
+              </q>
+            </div>
+            {% include "@components/photogallery/photogallery.twig" %}
+            <div class="articleAuthor">
+              <div class="articleAuthor__item">
+                <div class="articleAuthor__item-img">
+                  <img
+                    src="images/content/ava.png"
+                    alt="avatar"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="articleAuthor__item-info">
+                  <h6>Alice Bednářová</h6>
+                  <span>Produkční</span>
+                </div>
+              </div>
+              <ul class="articleAuthor__links">
+                <li>
+                  <div id="copyLink">
+                    {% include "@images/copyLink.svg" %} Klikni pro zkopírování
+                    <span id="tooltip" style="visibility: hidden"
+                      >Odkaz zkopírován</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="social-share twitter">
+                    {% include "@images/twitter.svg" %}
+                  </div>
+                </li>
+                <li>
+                  <div class="social-share facebook">
+                    {% include "@images/facebook.svg" %}
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+{% endblock %}
