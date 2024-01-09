@@ -1,8 +1,9 @@
 [
     {
         "title": "Event title",
-        "date": "5/11/2023",
+        "date": "1/9/2024",
         "logo": "./images/ico/club-2.svg",
+        "url": "https://example.com",
         "links": [
             {
                 "icon": "./images/ico/pulse.svg"

@@ -56,6 +56,16 @@ if (calendar) {
           const titleEl = document.createElement("h4");
           titleEl.innerText = eventForDay.title;
           eventDiv.appendChild(titleEl);
+          if (eventForDay.url) {
+            const a = document.createElement("a");
+            a.setAttribute("href", eventForDay.url);
+            a.innerText = eventForDay.title;
+            eventDiv.appendChild(a);
+          } else {
+            const titleEl = document.createElement("h4");
+            titleEl.innerText = eventForDay.title;
+            eventDiv.appendChild(titleEl);
+          }
           if (eventForDay.logo) {
             const logoImg = document.createElement("img");
             logoImg.classList.add("logo");
