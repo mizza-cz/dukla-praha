@@ -1,5 +1,8 @@
 .photogallery-section {
   margin-bottom: 40px;
+  &__items {
+    justify-content: center;
+  }
 }
 
 .photogallery {
