@@ -1,8 +1,6 @@
 .calendar {
-  margin-bottom: 80px;
-  @include media-breakpoint-down(lg) {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
+
   &__inner {
     max-width: 86.5rem;
     margin: 0 auto;
@@ -703,5 +701,16 @@
 .calendarBox {
   .table-section {
     padding-top: 0;
+  }
+}
+
+.pubs {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
