@@ -180,8 +180,37 @@
   padding: 0 0.825rem;
   list-style: none;
 }
+.dropdown-menu__col .dropdown-item {
+  width: fit-content;
+}
+.dropdown-menu__col .dropdown-item.dropdown-toggle {
+  padding-right: 16px;
+  @include media-breakpoint-down(xl) {
+    padding-right: 0;
+    padding-left: 16px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-image: url("../images/ico/arrow-aside.svg");
+    width: 10px;
+    height: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+    @include media-breakpoint-down(xl) {
+      background-image: url("../images/ico/arrow-aside-light.svg");
+      right: auto;
+      left: 0;
+      top: 10px;
+    }
+  }
+}
 .dropdown {
   &-toggle {
+    position: relative;
+
     &::after {
       display: none;
     }
@@ -191,10 +220,7 @@
     background-color: var(--color-yellow);
     z-index: 20;
     top: 100%;
-    left: 0px;
-    right: 0;
-    float: left;
-    min-width: 9rem;
+    min-width: 200px;
     padding: 8px 16px;
     margin: 0 0;
     font-size: 1rem;
@@ -206,11 +232,10 @@
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    padding-top: 46px;
-    padding-bottom: 32px;
-    padding-left: 200px;
-    padding-right: 200px;
+    width: max-content;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
     flex-wrap: wrap;
     justify-content: flex-start;
     display: none;
@@ -234,19 +259,20 @@
       padding-bottom: 0;
       li {
         margin-bottom: 8px;
+        @include media-breakpoint-down(xl) {
+          text-align: right;
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+        }
       }
     }
     &[data-bs-popper] {
       margin-top: 0;
     }
     &__col {
-      flex: 0 0 25%;
-      max-width: 25%;
-      padding: 0 20px;
       margin-bottom: 0;
-      li {
-        margin-bottom: 8px;
-      }
+
       @include media-breakpoint-down(xl) {
         padding: 0;
         flex: 100%;
@@ -260,7 +286,7 @@
     width: 100%;
     position: relative;
     left: 0%;
-    padding: 8px 0;
+    padding: 6px 0;
     clear: both;
     font-weight: 700;
     font-size: 14px;
@@ -432,7 +458,7 @@
 .dropdown-menu.show.dropdown-submenu {
   position: relative;
   padding: 0;
-  padding-top: 12px;
+  // padding-top: 12px;
   box-shadow: none;
   display: flex !important;
   flex-direction: column;

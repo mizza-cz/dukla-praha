@@ -105,6 +105,10 @@
   &__list {
     max-width: 420px;
     display: block;
+    @include media-breakpoint-down(xl) {
+      margin: 0 auto;
+      max-width: 600px;
+    }
     li {
       margin-bottom: 8px;
       counter-increment: item;
@@ -154,8 +158,6 @@
 .top-player {
   &__inner {
     align-items: flex-end;
-    @include media-breakpoint-down(xl) {
-    }
   }
   &__row {
     display: flex;
@@ -189,9 +191,8 @@
       font-weight: 900;
       line-height: 40px;
       text-transform: uppercase;
-      @include media-breakpoint-down(md) {
-        text-align: center;
-      }
+      text-align: center;
+
       span {
         display: block;
         font-size: 14px;

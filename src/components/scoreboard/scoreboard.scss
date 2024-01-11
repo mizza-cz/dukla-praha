@@ -69,8 +69,10 @@
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
     @include media-breakpoint-down(xl) {
       max-width: 800px;
+      height: auto;
     }
 
     @include media-breakpoint-down(sm) {
