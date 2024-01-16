@@ -8,10 +8,12 @@ block main %} {% include "@components/article/article.twig" %} {% include
   <div class="container">
     <div class="row">
       <div class="col-lg-9">
-        {% include "@components/calendar/calendar.twig" %}
-        <a class="pubs" href="#" target="_blank">
-          <img src="images/content/bans.jpeg" loading="lazy" alt="" />
-        </a>
+        <div class="calendarBox__col">
+          {% include "@components/calendar/calendar.twig" %}
+          <a class="pubs" href="#" target="_blank">
+            <img src="images/content/bans.jpeg" loading="lazy" alt="" />
+          </a>
+        </div>
       </div>
       <div class="col-lg-3">
         <section class="table-section">

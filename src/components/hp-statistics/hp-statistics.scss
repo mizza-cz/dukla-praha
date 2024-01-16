@@ -1,6 +1,5 @@
 .hp-statistics {
-  height: 524px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   @include media-breakpoint-down(xl) {
     height: 100%;
   }
@@ -167,6 +166,7 @@
     @include media-breakpoint-down(md) {
       border-top: 1px solid var(--color-gray);
       padding-top: 20px;
+      margin-bottom: 20px;
     }
   }
   &__list {

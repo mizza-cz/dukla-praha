@@ -699,6 +699,12 @@
 
 // calendarBox
 .calendarBox {
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
   .table-section {
     padding-top: 0;
   }

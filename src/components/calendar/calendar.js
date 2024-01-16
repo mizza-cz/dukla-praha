@@ -1,5 +1,4 @@
 let nav = 0;
-let clicked = null;
 let eventsList = localStorage.getItem("events")
   ? JSON.parse(localStorage.getItem("events"))
   : [];
@@ -90,19 +89,12 @@ if (calendar) {
             eventDiv.appendChild(linksDiv);
           }
           daySquare.appendChild(eventDiv);
-
-          // Add event listener for popup
-          eventDiv.addEventListener("click", () => {
-            clicked = eventForDay;
-            openModal();
-          });
         }
       } else {
         daySquare.classList.add("padding");
       }
       calendar.appendChild(daySquare);
     }
-    // ...
 
     var components = document.getElementsByClassName("day");
     for (var i = 0; i < components.length; i++) {
@@ -111,52 +103,11 @@ if (calendar) {
         component.classList.add("day-bg");
       }
     }
-
-    // Add event listener for closing the modal on click outside the window
-    const modalBackDrop = document.getElementById("modalBackDrop");
-    if (modalBackDrop) {
-      modalBackDrop.addEventListener("click", () => {
-        closeModal();
-      });
-    }
-  }
-
-  // ...
-
-  function openModal() {
-    const newEventModal = document.getElementById("newEventModal");
-    const modalBackDrop = document.getElementById("modalBackDrop");
-    if (newEventModal && modalBackDrop) {
-      newEventModal.style.display = "block";
-      modalBackDrop.style.display = "block";
-      populateModal();
-    }
-  }
-
-  function closeModal() {
-    const newEventModal = document.getElementById("newEventModal");
-    const modalBackDrop = document.getElementById("modalBackDrop");
-    if (newEventModal && modalBackDrop) {
-      newEventModal.style.display = "none";
-      modalBackDrop.style.display = "none";
-      clicked = null;
-    }
-  }
-
-  function populateModal() {
-    const eventTitleInput = document.getElementById("eventTitleInput");
-    if (eventTitleInput && clicked) {
-      eventTitleInput.value = clicked.title;
-    }
   }
 
   function initButtons() {
     const nextButton = document.getElementById("nextButton");
     const backButton = document.getElementById("backButton");
-    const saveButton = document.getElementById("saveButton");
-    const cancelButton = document.getElementById("cancelButton");
-    const closeButton = document.getElementById("closeButton");
-    const deleteButton = document.getElementById("deleteButton");
 
     if (nextButton) {
       nextButton.addEventListener("click", () => {
@@ -169,30 +120,6 @@ if (calendar) {
       backButton.addEventListener("click", () => {
         nav--;
         load();
-      });
-    }
-
-    if (saveButton) {
-      saveButton.addEventListener("click", () => {
-        // Code to save the event
-      });
-    }
-
-    if (cancelButton) {
-      cancelButton.addEventListener("click", () => {
-        closeModal();
-      });
-    }
-
-    if (closeButton) {
-      closeButton.addEventListener("click", () => {
-        closeModal();
-      });
-    }
-
-    if (deleteButton) {
-      deleteButton.addEventListener("click", () => {
-        // Code to delete the event
       });
     }
   }

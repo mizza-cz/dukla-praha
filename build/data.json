@@ -3,7 +3,7 @@
         "title": "Event title",
         "date": "1/9/2024",
         "logo": "./images/ico/club-2.svg",
-        "url": "https://example.com",
+        "url": "https://www.fkdukla.cz/",
         "links": [
             {
                 "icon": "./images/ico/pulse.svg"
@@ -16,14 +16,15 @@
     },
     {
         "title": "Event title",
-        "date": "5/17/2023",
+        "date": "1/17/2024",
         "logo": "./images/ico/club-2.svg",
         "links": []
     },
     {
         "title": "Event title",
-        "date": "6/11/2023",
+        "date": "1/11/2024",
         "logo": "./images/ico/club-2.svg",
+        "url": "https://www.fkdukla.cz/novinky.asp?kategorie=1",
         "links": [
             {
                 "icon": "./images/ico/pulse.svg"
