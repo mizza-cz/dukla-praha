@@ -484,3 +484,8 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  div#es-strip-container {
+    display: none;
+  }
+}
