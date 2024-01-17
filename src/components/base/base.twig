@@ -53,6 +53,13 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <style>
+      @media (max-width: 1200px) {
+        div#es-strip-container {
+          display: none;
+        }
+      }
+    </style>
     <div class="base">
       {% include "@components/header/header.twig" %}
       <main class="main" aria-label="Hlavní obsah">
