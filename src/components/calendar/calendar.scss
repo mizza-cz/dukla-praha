@@ -104,6 +104,10 @@
 }
 .day:hover {
   color: var(--color-red);
+  .day__info {
+    background: rgba(#671219, 0.9);
+    visibility: visible;
+  }
 }
 
 .day + #currentDay {
@@ -719,4 +723,31 @@
     width: 100%;
     height: auto;
   }
+}
+
+.day__info {
+  position: absolute;
+  background: rgba(#671219, 0);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  line-height: normal;
+  visibility: hidden;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+.day__date {
+  color: var(--color-yellow);
+  font-size: 16px;
+}
+.day__place {
+  color: var(--color-yellow);
+  font-size: 16px;
+  text-transform: uppercase;
 }

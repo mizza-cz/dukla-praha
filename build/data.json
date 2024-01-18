@@ -4,6 +4,10 @@
         "date": "1/9/2024",
         "logo": "./images/ico/club-2.svg",
         "url": "https://www.fkdukla.cz/",
+        "info": {
+            "date": "18:00",
+            "place": "Praha"
+        },
         "links": [
             {
                 "icon": "./images/ico/pulse.svg"
@@ -18,6 +22,10 @@
         "title": "Event title",
         "date": "1/17/2024",
         "logo": "./images/ico/club-2.svg",
+        "info": {
+            "date": "14:00",
+            "place": "Brno"
+        },
         "links": []
     },
     {
@@ -25,6 +33,10 @@
         "date": "1/11/2024",
         "logo": "./images/ico/club-2.svg",
         "url": "https://www.fkdukla.cz/novinky.asp?kategorie=1",
+        "info": {
+            "date": "20:00",
+            "place": "Olomouc"
+        },
         "links": [
             {
                 "icon": "./images/ico/pulse.svg"

@@ -88,6 +88,26 @@ if (calendar) {
             }
             eventDiv.appendChild(linksDiv);
           }
+
+          // Добавляем блок day__info
+          const dayInfoDiv = document.createElement("div");
+          dayInfoDiv.classList.add("day__info");
+
+          // Проверяем наличие информации и добавляем ее
+          if (eventForDay.info) {
+            const infoDateDiv = document.createElement("div");
+            infoDateDiv.classList.add("day__date");
+            infoDateDiv.innerText = eventForDay.info.date; // Замените на соответствующее поле из JSON
+            dayInfoDiv.appendChild(infoDateDiv);
+
+            const infoPlaceDiv = document.createElement("div");
+            infoPlaceDiv.classList.add("day__place");
+            infoPlaceDiv.innerText = eventForDay.info.place; // Замените на соответствующее поле из JSON
+            dayInfoDiv.appendChild(infoPlaceDiv);
+          }
+
+          // Добавляем блок day__info в eventDiv
+          eventDiv.appendChild(dayInfoDiv);
           daySquare.appendChild(eventDiv);
         }
       } else {
