@@ -1,6 +1,12 @@
 [
     {
         "title": "Event title",
+        "date": "1/22/2024",
+        "logo": "./images/ico/logo.svg",
+        "url": "https://www.fkdukla.cz/"
+    },
+    {
+        "title": "Event title",
         "date": "1/9/2024",
         "logo": "./images/ico/club-2.svg",
         "url": "https://www.fkdukla.cz/",

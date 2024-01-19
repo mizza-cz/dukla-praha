@@ -36,7 +36,6 @@ if (calendar) {
       monthDisplay.innerText = `${dt.toLocaleDateString("cs-Cz", {
         month: "long",
       })} ${year}`;
-    } else {
     }
     calendar.innerHTML = "";
     for (let i = 1; i <= paddingDays + daysInMonth; i++) {
@@ -89,25 +88,32 @@ if (calendar) {
             eventDiv.appendChild(linksDiv);
           }
 
-          // Добавляем блок day__info
-          const dayInfoDiv = document.createElement("div");
-          dayInfoDiv.classList.add("day__info");
-
-          // Проверяем наличие информации и добавляем ее
+          // Check if eventForDay.info exists before creating day__info block
           if (eventForDay.info) {
-            const infoDateDiv = document.createElement("div");
-            infoDateDiv.classList.add("day__date");
-            infoDateDiv.innerText = eventForDay.info.date; // Замените на соответствующее поле из JSON
-            dayInfoDiv.appendChild(infoDateDiv);
+            // Добавляем блок day__info
+            const dayInfoDiv = document.createElement("div");
+            dayInfoDiv.classList.add("day__info");
 
-            const infoPlaceDiv = document.createElement("div");
-            infoPlaceDiv.classList.add("day__place");
-            infoPlaceDiv.innerText = eventForDay.info.place; // Замените на соответствующее поле из JSON
-            dayInfoDiv.appendChild(infoPlaceDiv);
+            // Добавляем информацию только если eventForDay.info.date не пусто
+            if (eventForDay.info.date) {
+              const infoDateDiv = document.createElement("div");
+              infoDateDiv.classList.add("day__date");
+              infoDateDiv.innerText = eventForDay.info.date; // Замените на соответствующее поле из JSON
+              dayInfoDiv.appendChild(infoDateDiv);
+            }
+
+            // Добавляем информацию только если eventForDay.info.place не пусто
+            if (eventForDay.info.place) {
+              const infoPlaceDiv = document.createElement("div");
+              infoPlaceDiv.classList.add("day__place");
+              infoPlaceDiv.innerText = eventForDay.info.place; // Замените на соответствующее поле из JSON
+              dayInfoDiv.appendChild(infoPlaceDiv);
+            }
+
+            // Добавляем блок day__info в eventDiv
+            eventDiv.appendChild(dayInfoDiv);
           }
 
-          // Добавляем блок day__info в eventDiv
-          eventDiv.appendChild(dayInfoDiv);
           daySquare.appendChild(eventDiv);
         }
       } else {
