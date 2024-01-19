@@ -21,6 +21,7 @@
     {
         "title": "Event title",
         "date": "1/17/2024",
+        "url": "https://www.fkdukla.cz/novinky.asp?kategorie=1",
         "logo": "./images/ico/club-2.svg",
         "info": {
             "date": "14:00",
