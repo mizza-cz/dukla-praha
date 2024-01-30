@@ -1,4 +1,5 @@
-.o-content {
+.o-content,
+.textStatistics {
   blockquote {
     background: #f9f9f9;
     border-left: 10px solid var(--color-yellow);
@@ -32,6 +33,9 @@
     margin-bottom: 16px;
   }
   h5 {
+    margin-bottom: 12px;
+  }
+  h4 {
     margin-bottom: 12px;
   }
   ul {

@@ -3,7 +3,9 @@ iframesWrap();
 
 // TABLE (wysiwyg editor) responsive
 function tablesWrap() {
-  var contentTables = document.querySelectorAll(".o-content table"),
+  var contentTables = document.querySelectorAll(
+      ".o-content table, .textStatistics table"
+    ),
     i;
 
   for (i = 0; i < contentTables.length; ++i) {
