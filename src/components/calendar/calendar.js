@@ -1,164 +1,138 @@
-let currentMonth = 0;
-let eventsList = localStorage.getItem("events")
-  ? JSON.parse(localStorage.getItem("events"))
-  : [];
-const calendar = document.getElementById("calendar");
-const weekdays = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
-];
-
-if (calendar) {
-  function load(monthOffset = 0) {
-    currentMonth += monthOffset;
-    const dt = new Date();
-    dt.setMonth(new Date().getMonth() + currentMonth, 1); // Устанавливаем день в 1
-    const day = dt.getDate();
-    const month = dt.getMonth();
-    const year = dt.getFullYear();
-    const firstDayOfMonth = new Date(year, month, 1);
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const dateString = firstDayOfMonth.toLocaleDateString("en-us", {
+let O = 0,
+  k = localStorage.getItem("events")
+    ? JSON.parse(localStorage.getItem("events"))
+    : [];
+const _ = document.getElementById("calendar"),
+  D = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+if (_) {
+  function n(t = 0) {
+    O += t;
+    const e = new Date();
+    e.setMonth(new Date().getMonth() + O, 1);
+    const today = new Date();
+    var i = today.getDate(),
+      s = e.getMonth(),
+      n = e.getFullYear();
+    const o = new Date(n, s, 1);
+    var r = new Date(n, s + 1, 0).getDate();
+    const a = o.toLocaleDateString("en-us", {
       weekday: "long",
       year: "numeric",
       month: "numeric",
       day: "numeric",
     });
-    const paddingDays = weekdays.indexOf(dateString.split(", ")[0]);
-    const monthDisplay = document.getElementById("monthDisplay");
-
-    if (monthDisplay !== null) {
-      monthDisplay.innerText = `${dt.toLocaleDateString("cs-Cz", {
-        month: "long",
-      })} ${year}`;
-    }
-
-    calendar.innerHTML = "";
-    for (let i = 1; i <= paddingDays + daysInMonth; i++) {
-      const daySquare = document.createElement("div");
-      daySquare.classList.add("day");
-      const dayString = `${month + 1}/${i - paddingDays}/${year}`;
-
-      if (i > paddingDays) {
-        daySquare.innerText = i - paddingDays;
-        const eventForDay = eventsList.find((e) => e.date === dayString);
-
-        if (i - paddingDays === day && currentMonth === 0) {
-          daySquare.id = "currentDay";
+    var l = D.indexOf(a.split(", ")[0]);
+    const c = document.getElementById("monthDisplay");
+    c &&
+      (c.innerText =
+        e.toLocaleDateString("cs-Cz", { month: "long" }) + " " + n),
+      (_.innerHTML = "");
+    for (let t = 1; t <= l + r; t++) {
+      const f = document.createElement("div");
+      f.classList.add("day");
+      const m = `${s + 1}/${t - l}/${n}`;
+      if (t > l) {
+        f.innerText = t - l;
+        if (
+          t - l === i &&
+          e.getMonth() === today.getMonth() &&
+          n === today.getFullYear()
+        ) {
+          f.id = "currentDay";
         }
-
-        if (eventForDay) {
-          const eventDiv = document.createElement("div");
-          eventDiv.classList.add("event");
-          const titleEl = document.createElement("h4");
-          titleEl.innerText = eventForDay.title;
-          eventDiv.appendChild(titleEl);
-
-          if (eventForDay.url) {
-            const a = document.createElement("a");
-            a.setAttribute("href", eventForDay.url);
-            a.innerText = eventForDay.title;
-            eventDiv.appendChild(a);
+        var d = k.find((t) => t.date === m);
+        if (d) {
+          const y = document.createElement("div"),
+            v = document.createElement("h4");
+          y.classList.add("event");
+          v.innerText = d.title;
+          y.appendChild(v);
+          if (d.url) {
+            const b = document.createElement("a");
+            b.setAttribute("href", d.url);
+            b.innerText = d.title;
+            y.appendChild(b);
           } else {
-            const titleEl = document.createElement("h4");
-            titleEl.innerText = eventForDay.title;
-            eventDiv.appendChild(titleEl);
+            const w = document.createElement("h4");
+            w.innerText = d.title;
+            y.appendChild(w);
           }
-
-          if (eventForDay.logo) {
-            const logoImg = document.createElement("img");
-            logoImg.classList.add("logo");
-            logoImg.src = eventForDay.logo;
-            eventDiv.appendChild(logoImg);
+          if (d.logo) {
+            const C = document.createElement("img");
+            C.classList.add("logo");
+            C.src = d.logo;
+            y.appendChild(C);
           }
-
-          if (eventForDay.links) {
-            const linksDiv = document.createElement("div");
-            linksDiv.classList.add("links");
-            for (let j = 0; j < eventForDay.links.length; j++) {
-              const link = eventForDay.links[j];
-              const linkEl = document.createElement("div");
-              linkEl.classList.add("link");
-              if (link.icon) {
-                const iconImg = document.createElement("img");
-                iconImg.classList.add("icon");
-                iconImg.src = link.icon;
-                linkEl.appendChild(iconImg);
+          if (d.links) {
+            const S = document.createElement("div");
+            S.classList.add("links");
+            for (let t = 0; t < d.links.length; t++) {
+              const u = d.links[t],
+                x = document.createElement("div"),
+                T = document.createElement("img");
+              x.classList.add("link");
+              if (u.icon) {
+                T.classList.add("icon");
+                T.src = u.icon;
+                x.appendChild(T);
               }
-              linksDiv.appendChild(linkEl);
+              S.appendChild(x);
             }
-            eventDiv.appendChild(linksDiv);
+            y.appendChild(S);
           }
-
-          if (eventForDay.info) {
-            const dayInfoDiv = document.createElement("div");
-            dayInfoDiv.classList.add("day__info");
-
-            if (eventForDay.info.date) {
-              const infoDateDiv = document.createElement("div");
-              infoDateDiv.classList.add("day__date");
-              infoDateDiv.innerText = eventForDay.info.date;
-              dayInfoDiv.appendChild(infoDateDiv);
+          if (d.info) {
+            const I = document.createElement("div");
+            I.classList.add("day__info");
+            if (d.info.date) {
+              const A = document.createElement("div");
+              A.classList.add("day__date");
+              A.innerText = d.info.date;
+              I.appendChild(A);
             }
-
-            if (eventForDay.info.place) {
-              const infoPlaceDiv = document.createElement("div");
-              infoPlaceDiv.classList.add("day__place");
-              infoPlaceDiv.innerText = eventForDay.info.place;
-              dayInfoDiv.appendChild(infoPlaceDiv);
+            if (d.info.place) {
+              const E = document.createElement("div");
+              E.classList.add("day__place");
+              E.innerText = d.info.place;
+              I.appendChild(E);
             }
-            eventDiv.appendChild(dayInfoDiv);
+            y.appendChild(I);
           }
-          daySquare.appendChild(eventDiv);
+          f.appendChild(y);
         }
       } else {
-        daySquare.classList.add("padding");
+        f.classList.add("padding");
       }
-      calendar.appendChild(daySquare);
-    }
-
-    var components = document.getElementsByClassName("day");
-    for (var i = 0; i < components.length; i++) {
-      var component = components[i];
-      if (component.querySelector(".event")) {
-        component.classList.add("day-bg");
-      }
+      _.appendChild(f);
     }
   }
-
-  function initButtons() {
-    const nextButton = document.getElementById("nextButton");
-    const backButton = document.getElementById("backButton");
-
-    if (nextButton) {
-      nextButton.addEventListener("click", () => {
-        load(1);
+  const f = document.getElementById("nextButton"),
+    m = document.getElementById("backButton");
+  f &&
+    f.addEventListener("click", () => {
+      n(1);
+    }),
+    m &&
+      m.addEventListener("click", () => {
+        n(-1);
       });
-    }
-
-    if (backButton) {
-      backButton.addEventListener("click", () => {
-        load(-1);
-      });
-    }
-  }
-
-  initButtons();
-
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", "data.json", true);
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      const eventsFromJson = JSON.parse(xhr.response);
-      localStorage.setItem("events", JSON.stringify(eventsFromJson));
-      eventsList = eventsFromJson;
-      load();
+  const g = new XMLHttpRequest();
+  g.open("GET", "data.json", true);
+  // g.open('GET', '/api/calendar/matches.php', true);
+  g.onload = function () {
+    if (g.status === 200) {
+      const t = JSON.parse(g.response);
+      localStorage.setItem("events", JSON.stringify(t));
+      k = t;
+      n();
     }
   };
-  xhr.send();
+  g.send();
 }
