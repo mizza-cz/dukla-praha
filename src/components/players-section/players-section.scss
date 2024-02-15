@@ -5,14 +5,19 @@
       margin-bottom: 40px;
     }
   }
+  .header-section__nav {
+    @include media-breakpoint-down(lg) {
+      order: 2;
+    }
+  }
   &__inner {
-    margin-top: 80px;
+    margin-top: 60px;
 
     .h2 {
       margin-bottom: 17px;
     }
     @include media-breakpoint-down(xl) {
-      margin-top: 60px;
+      margin-top: 40px;
     }
   }
 

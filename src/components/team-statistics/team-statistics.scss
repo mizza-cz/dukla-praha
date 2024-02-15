@@ -82,6 +82,7 @@
   flex-wrap: nowrap !important;
   margin-left: -32px;
   margin-right: -32px;
+  justify-content: center;
   @include media-breakpoint-down(xl) {
     flex-direction: column;
   }
