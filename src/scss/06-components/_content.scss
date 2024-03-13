@@ -107,12 +107,15 @@
     margin-top: 32px;
   }
   p iframe {
-    margin: 0;
+    margin: 32px;
   }
   iframe {
-    max-width: 100%;
-    width: 100%;
     display: block;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
   &::after {
     display: table;
