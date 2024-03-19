@@ -124,8 +124,8 @@ if (_) {
         n(-1);
       });
   const g = new XMLHttpRequest();
-  g.open("GET", "data.json", true);
-  // g.open('GET', '/api/calendar/matches.php', true);
+  // g.open("GET", "data.json", true);
+  g.open("GET", "/api/calendar/matches.php", true);
   g.onload = function () {
     if (g.status === 200) {
       const t = JSON.parse(g.response);

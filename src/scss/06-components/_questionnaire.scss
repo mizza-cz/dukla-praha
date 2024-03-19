@@ -1,0 +1,26 @@
+.questionnaire__item {
+  text-align: center;
+  font-weight: 700;
+  background-color: #fff;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  box-shadow: 0 0.125rem 0.25rem transparent,
+    0 0.625rem 1.5rem rgba(0, 0, 0, 0.052092);
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #e4e4e4;
+  padding: 24px;
+  a {
+    display: block;
+    font-size: 20px;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+  img {
+    max-width: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto 12px;
+  }
+}
