@@ -1,0 +1,73 @@
+.playersJuniors {
+  .header-section__nav {
+    @include media-breakpoint-down(lg) {
+      order: 2;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 124px;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 40px;
+    }
+  }
+  &__inner {
+    margin-top: 60px;
+
+    .h2 {
+      margin-bottom: 17px;
+    }
+    @include media-breakpoint-down(xl) {
+      margin-top: 40px;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__col {
+    max-width: 20%;
+    flex: 0 0 20%;
+    @include media-breakpoint-only(xl) {
+      max-width: 25%;
+      flex: 0 0 25%;
+    }
+    @include media-breakpoint-only(lg) {
+      max-width: 33.333%;
+      flex: 0 0 33.333%;
+    }
+    @include media-breakpoint-only(md) {
+      max-width: 33.333%;
+      flex: 0 0 33.333%;
+    }
+    @include media-breakpoint-only(sm) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      flex: 100%;
+    }
+    .players-section__number {
+      font-size: 2rem;
+      left: 16px;
+    }
+    .players-section__item {
+      height: 20rem;
+    }
+    .players-section__name {
+      font-size: 2rem;
+    }
+    .players-section__img {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        max-height: 260px;
+        @include media-breakpoint-down(md) {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
