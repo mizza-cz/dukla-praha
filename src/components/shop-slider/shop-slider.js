@@ -6,9 +6,9 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
-      '<button class="shop-slider__btn shop-slider__btnprev"><img src="/dist/images/ico/slider.svg" loading="lazy" alt="" /></button>',
+      '<button class="shop-slider__btn shop-slider__btnprev"><img src="./images/ico/slider.svg" loading="lazy" alt="" /></button>',
     nextArrow:
-      '<button class="shop-slider__btn shop-slider__btnnext"><img src="/dist/images/ico/slider.svg" loading="lazy" alt="" /></button>',
+      '<button class="shop-slider__btn shop-slider__btnnext"><img src="./images/ico/slider.svg" loading="lazy" alt="" /></button>',
     responsive: [
       {
         breakpoint: 1001,
