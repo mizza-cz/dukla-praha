@@ -484,7 +484,7 @@
     }
   }
 }
-@media (max-width: 1200px) {
+@include media-breakpoint-down(xl) {
   div#es-strip-container {
     display: none;
   }
