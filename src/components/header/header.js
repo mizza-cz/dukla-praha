@@ -15,3 +15,26 @@ function headerNavOpenerClick() {
     }
   });
 }
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault(); // Чтобы ссылка не перезагружала страницу
+
+    const navItem = this.closest(".nav-item"); // Находим родителя .nav-item
+
+    if (!navItem) return; // Если родителя нет, выходим
+
+    const isActive = navItem.classList.contains("showMob");
+
+    // Убираем showMob у всех .nav-item
+    document
+      .querySelectorAll(".nav-item")
+      .forEach((item) => item.classList.remove("showMob"));
+
+    // Если у текущего элемента не было класса showMob, добавляем
+    if (!isActive) {
+      navItem.classList.add("showMob");
+    }
+  });
+});

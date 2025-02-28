@@ -418,7 +418,17 @@
   display: flex;
 }
 .nav-item:hover > .dropdown-menu {
-  display: flex !important;
+  @include media-breakpoint-up(xl) {
+    display: flex !important;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .nav-item.showMob {
+    > .dropdown-menu {
+      display: flex !important;
+    }
+  }
 }
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
