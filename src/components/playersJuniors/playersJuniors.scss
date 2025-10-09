@@ -21,33 +21,27 @@
     }
   }
   &__row {
-    display: flex;
     flex-wrap: wrap;
     gap: 20px;
-  }
-  &__col {
-    max-width: 20%;
-    flex: 0 0 20%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     @include media-breakpoint-only(xl) {
-      max-width: 25%;
-      flex: 0 0 25%;
+      grid-template-columns: repeat(4, 1fr);
     }
     @include media-breakpoint-only(lg) {
-      max-width: 33.333%;
-      flex: 0 0 33.333%;
+      grid-template-columns: repeat(3, 1fr);
     }
     @include media-breakpoint-only(md) {
-      max-width: 33.333%;
-      flex: 0 0 33.333%;
+      grid-template-columns: repeat(3, 1fr);
     }
     @include media-breakpoint-only(sm) {
-      max-width: 50%;
-      flex: 0 0 50%;
+      grid-template-columns: repeat(2, 1fr);
     }
     @include media-breakpoint-down(sm) {
-      max-width: 100%;
-      flex: 100%;
+      grid-template-columns: 1fr;
     }
+  }
+  &__col {
     .players-section__number {
       font-size: 2rem;
       left: 16px;
@@ -69,5 +63,16 @@
         }
       }
     }
+  }
+}
+
+.playersJuniors__bg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
