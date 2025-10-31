@@ -5,14 +5,28 @@
 
       <div class="header-section__row w-100">
         <label class="o-select header-section__label">
-          <div class="header-section__category">Kategorie</div>
-          <select class="js-select">
-            <option>FORTUNA:NÁRODNÍ LIGA 2023/24</option>
-            <option>sezona 1</option>
-            <option>sezona 2</option>
-            <option>sezona 3</option>
-            <option>sezona 4</option>
-            <option>sezona 5</option>
+          <div class="header-section__category">Sezóna</div>
+          <select
+            class="js-select"
+            onchange="if (this.value) window.location.href=this.value"
+          >
+            <option value="/youth?category=U19&season=2026" selected>
+              2025/26
+            </option>
+            <option value="/youth?category=U19&season=2025">2024/25</option>
+            <option value="/youth?category=U19&season=2024">2023/24</option>
+            <option value="/youth?category=U19&season=2023">2022/23</option>
+            <option value="/youth?category=U19&season=2022">2021/22</option>
+            <option value="/youth?category=U19&season=2021">2020/21</option>
+            <option value="/youth?category=U19&season=2020">2019/20</option>
+            <option value="/youth?category=U19&season=2019">2018/19</option>
+            <option value="/youth?category=U19&season=2018">2017/18</option>
+            <option value="/youth?category=U19&season=2017">2016/17</option>
+            <option value="/youth?category=U19&season=2016">2015/16</option>
+            <option value="/youth?category=U19&season=2015">2014/15</option>
+            <option value="/youth?category=U19&season=2014">2013/14</option>
+            <option value="/youth?category=U19&season=2013">2012/13</option>
+            <option value="/youth?category=U19&season=2012">2011/12</option>
           </select>
         </label>
       </div>
