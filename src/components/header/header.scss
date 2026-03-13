@@ -497,3 +497,24 @@
     display: none;
   }
 }
+
+.header__lang {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  a {
+    width: 25px;
+    height: 25px;
+    display: block;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    img,
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}
