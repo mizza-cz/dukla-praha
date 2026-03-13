@@ -13,50 +13,49 @@
             <a class="header__title-link" href="/">FK Dukla Praha</a>
             <span class="header-title">Hrdý na svůj klub</span>
           </div>
-          <div class="d-flex flex-column ms-xl-0 ms-auto">
-            {% include "@components/social/social.twig" %}
-            <div class="header__lang">
-              <a class="d-block" href="#">
-                <img
-                  src="images/ico/cz.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt="lang"
-                />
-              </a>
-              <a class="d-block" href="#">
-                <img
-                  src="images/ico/en.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt="lang"
-                />
-              </a>
-              <a class="d-block" href="#">
-                <img
-                  src="images/ico/de.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt="lang"
-                />
-              </a>
-              <a class="d-block" href="#">
-                <img
-                  src="images/ico/spain.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt="lang"
-                />
-              </a>
-            </div>
+
+          {% include "@components/social/social.twig" %}
+          <div class="header__lang d-xl-none d-flex">
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/cz.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/en.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/de.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/spain.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <button class="c-header__opener js-header__opener" type="button">
+              <span></span>
+            </button>
           </div>
-          <button class="c-header__opener js-header__opener" type="button">
-            <span></span>
-          </button>
         </div>
         <nav class="navbar navbar-expand-xl">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -260,10 +259,48 @@
               {% include "@components/social/social.twig" %}
             </div>
           </div>
-          <div class="header__search">
-            <a href="#" class="header__search-img">
-              <img src="images/ico/search.svg" loading="lazy" alt="search" />
+          <div class="header__lang d-xl-flex d-none">
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/cz.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
             </a>
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/en.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/de.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <a class="d-block" href="#">
+              <img
+                src="images/ico/spain.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt="lang"
+              />
+            </a>
+            <div class="header__search">
+              <a href="#" class="header__search-img">
+                <img src="images/ico/search.svg" loading="lazy" alt="search" />
+              </a>
+            </div>
           </div>
         </nav>
       </div>
