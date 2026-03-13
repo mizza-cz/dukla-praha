@@ -13,7 +13,47 @@
             <a class="header__title-link" href="/">FK Dukla Praha</a>
             <span class="header-title">Hrdý na svůj klub</span>
           </div>
-          {% include "@components/social/social.twig" %}
+          <div class="d-flex flex-column ms-xl-0 ms-auto">
+            {% include "@components/social/social.twig" %}
+            <div class="d-flex gap-2 align-items-center">
+              <a class="d-block" href="#">
+                <img
+                  src="images/ico/cz.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-contain"
+                  alt="lang"
+                />
+              </a>
+              <a class="d-block" href="#">
+                <img
+                  src="images/ico/en.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-contain"
+                  alt="lang"
+                />
+              </a>
+              <a class="d-block" href="#">
+                <img
+                  src="images/ico/de.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-contain"
+                  alt="lang"
+                />
+              </a>
+              <a class="d-block" href="#">
+                <img
+                  src="images/ico/spain.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-contain"
+                  alt="lang"
+                />
+              </a>
+            </div>
+          </div>
           <button class="c-header__opener js-header__opener" type="button">
             <span></span>
           </button>
@@ -225,10 +265,6 @@
               <img src="images/ico/search.svg" loading="lazy" alt="search" />
             </a>
           </div>
-          <!-- <button class="c-header__opener js-header__opener" type="button">
-          Menu
-          <span></span>
-        </button> -->
         </nav>
       </div>
     </div>
